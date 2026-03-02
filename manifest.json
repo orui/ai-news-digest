@@ -4,8 +4,8 @@
   "description": "毎朝6時更新のAIニュースまとめ",
   "start_url": "/ai-news-digest/",
   "display": "standalone",
-  "background_color": "#0f1117",
-  "theme_color": "#FA4616",
+  "background_color": "#111111",
+  "theme_color": "#111111",
   "icons": [
     {
       "src": "icon-192.png",
