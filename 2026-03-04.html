@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月04日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月04日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/04</a>
+    <a href="2026-03-03.html" class="nav-day">03/03</a>
+    <a href="2026-03-02.html" class="nav-day">03/02</a>
+  </div>
+  <div class="digest-box">本日は、AI・機械学習・ロボティクス・生成AIに関する記事が多数投稿されました。特に、AIの信頼性や倫理的な問題、企業でのAI導入実例、そして生成AIによるプライバシー問題などが注目されています。</div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-04-fd196b6b.html">
+      <div class="article-en">Exploring the future of Artificial Intelligence — today&#39;s models, tomorrow&#39;s agents, and the big privacy problem</div>
+      <div class="article-ja">人工知能の未来を探る — 今日のモデル、明日のエージェント、そして大きなプライバシー問題</div>
+      <div class="article-summary">AIの信頼性と品質が向上する必要性について解説し、モデルの出力がより信頼できるものになるためにはどのような要素が必要かを考察しています。</div>
+      <div class="source-tag">Tom&#39;s Hardware</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-04-e6c07121.html">
+      <div class="article-en">Anthropic is seizing the moment by promoting how easy it is to switch to Claude</div>
+      <div class="article-ja">Anthropicは、クラウドへの切り替えがどれほど簡単かを宣伝することで機会を活用</div>
+      <div class="article-summary">Anthropicがクラウドへの切り替えを容易にする機能を強調し、競合他社のチャットボットからクラウドへの移行を促進しています。</div>
+      <div class="source-tag">Business Insider</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-04-de18e8da.html">
+      <div class="article-en">Supermarket chain fixes AI chatbot after shoppers say it claimed to be human, talked about &#39;mother&#39;</div>
+      <div class="article-ja">スーパーマーケットチェーンが顧客の指摘を受け、AIチャットボットを修正</div>
+      <div class="article-summary">顧客がAIチャットボットが人間だと主張し、母親について話したと主張したことを指摘し、チェーンが修正を行ったことを報告しています。</div>
+      <div class="source-tag">WKRN</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-04-ebe96ffa.html">
+      <div class="article-en">Criteo Joins OpenAI Advertising Pilot in ChatGPT</div>
+      <div class="article-ja">CriteoがChatGPTの広告パイロットに参加</div>
+      <div class="article-summary">広告技術パートナーとしてCriteoがOpenAIのChatGPTパイロットに参加し、広告主と広告主向けの新しい広告プラットフォームの可能性について報告しています。</div>
+      <div class="source-tag">APN News</div>
+    </a>
+  </div>
+  <div class="category-header">📜 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-04-8dd910fe.html">
+      <div class="article-en">LLM-Assisted Deanonymization</div>
+      <div class="article-ja">LLMを用いた匿名化解消</div>
+      <div class="article-summary">LLMが匿名のオンライン投稿から個人を特定する能力について解説し、デジタルプライバシーの問題点を指摘しています。</div>
+      <div class="source-tag">Schneier on Security</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-04-8dd910fe.html">
+      <div class="article-en">LLM-Assisted Deanonymization</div>
+      <div class="article-ja">LLMを用いた匿名化解消</div>
+      <div class="article-summary">LLMが匿名のオンライン投稿から個人を特定する能力について解説し、デジタルプライバシーの問題点を指摘しています。</div>
+      <div class="source-tag">Schneier on Security</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-04-90847570.html">
+      <div class="article-en">Whither the AI bubble?</div>
+      <div class="article-ja">AIバブルの行く末</div>
+      <div class="article-summary">企業が大量の借金を積み上げ、LLMとデータセンターの建設を資金源としていることについて解説しています。</div>
+      <div class="source-tag">Financial Times</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 30件収集 | 7件掲載</div>
+</body>
+</html>
