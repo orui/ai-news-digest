@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月03日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月03日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/03</a>
+    <a href="2026-03-02.html" class="nav-day">03/02</a>
+  </div>
+  <div class="digest-box">本日はAI関連のニュースが盛りだくさんです。AIモデルの信頼性やセキュリティ、ビジネスでの活用、規制の動向などが注目されています。特に、AIの信頼性やセキュリティ面での懸念が強まっています。</div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-03-fd196b6b.html">
+      <div class="article-en">Exploring the future of Artificial Intelligence — today&#39;s models, tomorrow&#39;s agents, and the big privacy problem</div>
+      <div class="article-ja">AIの未来を探る — 今日のモデル、明日の代理機関、そして大きなプライバシー問題</div>
+      <div class="article-summary">AIの信頼性と品質が向上するためには、モデルの機能を理解し、改善する方法を把握することが重要です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-e6c07121.html">
+      <div class="article-en">Anthropic is seizing the moment by promoting how easy it is to switch to Claude</div>
+      <div class="article-ja">AnthropicはClaudeへの切り替えがいかに簡単かを宣伝することで機会を捉えています</div>
+      <div class="article-summary">Anthropicはユーザーの歴史をクラウドからインポートする機能を刷新し、ユーザーの移行を容易にしています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-c1c5f197.html">
+      <div class="article-en">First Large-Scale Study by AI Search Monitoring Platform OtterlyAI Shows YouTube is #2 Social Platform for AI Citations</div>
+      <div class="article-ja">AI検索モニタリングプラットフォームOtterlyAIの最初の大量調査がYouTubeをAI引用の第2のソーシャルプラットフォームに示しました</div>
+      <div class="article-summary">AI検索エンジンは、参考スタイルのビデオコンテンツを好むことが示されました。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-90847570.html">
+      <div class="article-en">Whither the AI bubble?</div>
+      <div class="article-ja">AIバブルはどこへ向かう？</div>
+      <div class="article-summary">企業は大規模な債務を抱え、LLMとデータセンターの建設を資金調達しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-20646310.html">
+      <div class="article-en">AI innovation itself introduces new attack vectors: Philippa Cogswell, Palo Alto Networks</div>
+      <div class="article-ja">AIの革新自体が新たな攻撃ベクトルを導入: Philippa Cogswell, Palo Alto Networks</div>
+      <div class="article-summary">AIは高度なサイバー攻撃のコストを低減し、攻撃の計画と実行が短時間で可能になっています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-5906d462.html">
+      <div class="article-en">AI Rebuilding Global Newsrooms — From Generative Content to Ethical Red Lines</div>
+      <div class="article-ja">AIがグローバルニュースルームを再構築 — 生成コンテンツから倫理的な赤線へ</div>
+      <div class="article-summary">AIはメディアの風景を以前にないほど変革しており、ニュースルームでは倫理的な問題が浮き彫りになっています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-38ac28c2.html">
+      <div class="article-en">Are newsrooms over-relying on AI? Risks deepen in 2026</div>
+      <div class="article-ja">ニュースルームはAIに過度に依存していますか？ 2026年ではリスクが深まっています</div>
+      <div class="article-summary">2026年では、AIはニュースルームの基盤となっていますが、自動化に過度に依存すると編集者の監視が弱まることへの懸念が高まっています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-03-65399b61.html">
+      <div class="article-en">Claude down: Anthropic’s Claude suffers two outages in 24 hours, prompting fresh scrutiny of AI reliability and resilience</div>
+      <div class="article-ja">Claudeダウン: AnthropicのClaudeが24時間で2回のダウンを経験し、AIの信頼性と堅牢性に対する再評価が促されます</div>
+      <div class="article-summary">AnthropicのClaudeが24時間で2回のダウンを経験し、AIの信頼性と堅牢性に対する懸念が高まっています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 30件収集 | 8件掲載</div>
+</body>
+</html>
