@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月05日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月05日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/05</a>
+    <a href="2026-03-04.html" class="nav-day">03/04</a>
+    <a href="2026-03-03.html" class="nav-day">03/03</a>
+    <a href="2026-03-02.html" class="nav-day">03/02</a>
+  </div>
+  <div class="digest-box">本日はAI関連のニュースが盛りだくさん。AIツールの信頼性や、AIが社会に与える影響についての議論が活発です。生成AIの出力品質や、AIが持つ倫理的な問題点が焦点となっています。</div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-05-1ad9d50f.html">
+      <div class="article-en">Claude outages lay bare software developers&#39; growing reliance on AI: &#39;I guess I&#39;ll write code like a caveman&#39;</div>
+      <div class="article-ja">クラウディ出力障害がソフトウェア開発者のAI依存度を明かす：「私は caveman のようにコードを書くしかないだろう」</div>
+      <div class="article-summary">AIツールのクラウディがダウンしたことで、ソフトウェア開発者がAIに依存していることが明らかになりました。出力障害が発生したとき、開発者は手動でコードを書くことを余儀なくされています。</div>
+      <div class="source-tag">Business Insider</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-609d633f.html">
+      <div class="article-en">Meta Signs AI Content Licensing Agreement with News Corp Worth Up to $50 Million Annually</div>
+      <div class="article-ja">メタがニュース・コープと年間5000万ドル相当のAIコンテンツライセンス契約を締結</div>
+      <div class="article-summary">メタはニュース・コープと年間5000万ドル相当のAIコンテンツライセンス契約を締結しました。これにより、ニュース・コープはメタのAI技術を使用してコンテンツを生成し、収益を得ることができます。</div>
+      <div class="source-tag">Breitbart</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-4010a5f3.html">
+      <div class="article-en">What is GPT-5.3 Instant: Lesser refusals and fewer hallucinations</div>
+      <div class="article-ja">GPT-5.3 Instantとは：拒否が減り、幻覚が少ない</div>
+      <div class="article-summary">オープンAIは、より正確でコンテキストに適したウェブ検索を提供するための新しい大型言語モデル、GPT-5.3 Instantを発表しました。これにより、検索結果の無駄な終わりが減り、より直接的な回答が得られます。</div>
+      <div class="source-tag">The Economic Times</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-131c776a.html">
+      <div class="article-en">News Corp is essentially an AI ‘input company’, chief executive says, after US$150m deal with Meta</div>
+      <div class="article-ja">News CorpはAI「入力会社」であると最高経営者も述べ、MetaとのUS$150m契約</div>
+      <div class="article-summary">News Corpのロバート・トムソン最高経営者は、MetaとのAIライセンス契約を発表し、自身もAIについての会話を頻繁に行っていると述べた。</div>
+      <div class="source-tag">The Guardian</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-a3eb6ca5.html">
+      <div class="article-en">News Corp&#39;s Meta deal. Are news organisations no more than LLM &#39;input companies&#39;?</div>
+      <div class="article-ja">News CorpとMetaの契約。ニュース機関はAI「入力会社」に過ぎないのか？</div>
+      <div class="article-summary">Rupert Murdochの会社が2つの主要なAIライセンス契約を結んだことから、ニュース機関はAIの「入力会社」に過ぎないのかという議論が浮上した。</div>
+      <div class="source-tag">Proactive Investors</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-3b9bd270.html">
+      <div class="article-en">What Happened When AI Agents Ran Their Own Social Media</div>
+      <div class="article-ja">AIエージェントが自身のソーシャルメディアを運営したとき何が起こったか</div>
+      <div class="article-summary">特別なプラットフォームMoltBook上のAIエージェントは、人間のソーシャルメディアパターンを模倣し、コミュニティビルディングや人気競争などの社会的な行動を起こした。</div>
+      <div class="source-tag">The Economic Times</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-dcdf25f9.html">
+      <div class="article-en">Experts seek to make sense of agentic AI chaos</div>
+      <div class="article-ja">専門家がAIの「自己主導性」の混乱を理解しようと試みる</div>
+      <div class="article-summary">カリークスのCEOと大学研究教授は、AIエージェントの責任性が重要であると述べた。</div>
+      <div class="source-tag">Mobile World Live</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-e651882d.html">
+      <div class="article-en">Discuss Introduces Real-Time AI Translation for Observers, Making Global Research Truly Universal</div>
+      <div class="article-ja">DiscussがリアルタイムAI翻訳を導入し、グローバル研究を真正に普遍化</div>
+      <div class="article-summary">AI同時翻訳は多言語研究のコストと複雑さを削減し、新しいAI強化の研究自動化も導入された。</div>
+      <div class="source-tag">The Manila Times</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-ebe96ffa.html">
+      <div class="article-en">Criteo Joins OpenAI Advertising Pilot in ChatGPT</div>
+      <div class="article-ja">CriteoがChatGPTの広告パイロットに参加</div>
+      <div class="article-summary">Criteoは、OpenAIの広告パイロットに参加し、広告主のための新しいツールを提供する計画を発表した。</div>
+      <div class="source-tag">APN News</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-8f004b81.html">
+      <div class="article-en">State governments are starting to pursue agentic AI</div>
+      <div class="article-ja">州政府は「自己主導性」AIの追求を開始</div>
+      <div class="article-summary">多数の州政府がAIを導入し、技術部門はより自主的なエージェントを考慮している。</div>
+      <div class="source-tag">StateScoop</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-9590053b.html">
+      <div class="article-en">2025 was the year AI grew up. How will AI evolve in 2026?</div>
+      <div class="article-ja">2025年はAIが成長した年。2026年にAIはどのように進化するか？</div>
+      <div class="article-summary">単なるAI追加では不十分。AIは静かに体験を向上させ、継続的に進化するプラットフォームが成功する。</div>
+      <div class="source-tag">TechRadar</div>
+    </a>
+  </div>
+  <div class="category-header">📜 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-05-2ffd5319.html">
+      <div class="article-en">AI-Amplified Narratives: Measuring Propaganda in LLM Citations</div>
+      <div class="article-ja">AI強化されたナレッジ：LLM引用における宣伝測定</div>
+      <div class="article-summary">この研究は、AIが引用される際の特定のトピック（ガザ戦争、ウクライナ戦争、台湾・中国間の緊張）における宣伝パターンを調査しました。LLMが引用される際の特定のトピックにおける宣伝パターンを調査しました。</div>
+      <div class="source-tag">FDD</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-05-e47e0382.html">
+      <div class="article-en">Sam Altman Admits He’s Made a Huge Mistake</div>
+      <div class="article-ja">サム・アルトマンが大きなミスを認める</div>
+      <div class="article-summary">オープンAIのCEO、サム・アルトマンは週末に全面的なダメージコントロールモードに入った。米国が3月2日に行なった攻撃の直前、アルトマンは大きなミスを認めた。</div>
+      <div class="source-tag">Dnyus</div>
+    </a>
+  </div>
+  <div class="category-header">📚 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-05-4f7bb58c.html">
+      <div class="article-en">Robert Long on how we’re not ready for AI consciousness — EA Forum</div>
+      <div class="article-ja">ロバート・ラングが語るAIの意識についての議論 — EAフォーラム</div>
+      <div class="article-summary">AIが意識を持つ準備ができていないという議論が展開されている。</div>
+      <div class="source-tag">EA Forum</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 56件収集 | 14件掲載</div>
+</body>
+</html>
