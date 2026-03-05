@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月06日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月06日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/06</a>
+    <a href="2026-03-05.html" class="nav-day">03/05</a>
+    <a href="2026-03-04.html" class="nav-day">03/04</a>
+    <a href="2026-03-03.html" class="nav-day">03/03</a>
+    <a href="2026-03-02.html" class="nav-day">03/02</a>
+  </div>
+  <div class="digest-box">本日はAI関連のニュースが盛りだくさんで、特にNews CorpとのMetaの提携やAI規制の問題点が注目されています。また、生成AIの最新動向も話題となっています。</div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-06-a3eb6ca5.html">
+      <div class="article-en">News Corp&#39;s Meta deal. Are news organisations no more than LLM &#39;input companies&#39;? | NASDAQ:NWSA</div>
+      <div class="article-ja">News CorpとMetaの提携。ニュース機関は生成AIの「入力企業」に過ぎないのか？ | NASDAQ:NWSA</div>
+      <div class="article-summary">News Corpは2年以内に2つの主要なAIライセンス契約を締結しており、Rupert Murdochの会社は今では契約を交わすのではなく、どのように交渉するべきかを考え始めています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-4010a5f3.html">
+      <div class="article-en">What is GPT-5.3 Instant: Lesser refusals and fewer hallucinations - The Economic Times</div>
+      <div class="article-ja">GPT-5.3 Instantとは？拒否が減り、幻覚が少ない - The Economic Times</div>
+      <div class="article-summary">OpenAIは最新の大規模言語モデルGPT-5.3 Instantをリリースし、より正確で文脈に合ったウェブ検索を提供します。</div>
+      <div class="source-tag">The Economic Times</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-1ad9d50f.html">
+      <div class="article-en">Claude outages lay bare software developers&#39; growing reliance on AI: &#39;I guess I&#39;ll write code like a caveman&#39;</div>
+      <div class="article-ja">クラウド outageが示すソフトウェア開発者のAIへの依存度:「私は caveman のようにコードを書くしかないだろう」</div>
+      <div class="article-summary">AIツールがエンジニアの日常業務に浸透しているため、クラウドのダウンタイムは彼らに手動でのコード作成に戻す可能性があります。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-131c776a.html">
+      <div class="article-en">News Corp is essentially an AI ‘input company’, chief executive says, after US$150m deal with Meta</div>
+      <div class="article-ja">News Corpは実質的にAI「入力企業」であると最高経営者は述べ、メタとのUS$150m契約を経て</div>
+      <div class="article-summary"></div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-3b9bd270.html">
+      <div class="article-en">What Happened When AI Agents Ran Their Own Social Media</div>
+      <div class="article-ja">AIエージェントが自身のソーシャルメディアを運営したとき何が起こったか</div>
+      <div class="article-summary">AIエージェントが独自のプラットフォームで形成された複雑な社会を形成し、人間のソーシャルメディアパターンを模倣しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-a799d236.html">
+      <div class="article-en">Best Coding LLMs 2026: Top AI Models Ranked</div>
+      <div class="article-ja">2026年のベストコーディング LLM: 上位AIモデルランキング</div>
+      <div class="article-summary">パフォーマンス、機能、ユーザー評価に基づいてコーディング LLMの上位モデルをランク付けしています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-953fe0ea.html">
+      <div class="article-en">Meta Signs $150 Million AI Content Deal With News Corp</div>
+      <div class="article-ja">メタはニュース・コープとのAIコンテンツ契約で1億5000万ドルを調印</div>
+      <div class="article-summary">メタはニュース・コープとのAIコンテンツ契約を締結し、ウォール街ジャーナルのコンテンツを使用する予定です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-1cdafb02.html">
+      <div class="article-en">AI tools can unmask anonymous accounts</div>
+      <div class="article-ja">AIツールは匿名アカウントを剥き出しにできる</div>
+      <div class="article-summary">新研究は、AIエージェントが大量に匿名のオンラインアカウントを特定できることを示しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-06-8bfee5af.html">
+      <div class="article-en">OpenAI Teases GPT-5.4 AI Model Launch Just a Day After Releasing GPT-5.3 Instant</div>
+      <div class="article-ja">OpenAIはGPT-5.3インスタントリリースの翌日にGPT-5.4 AIモデルの発売を teas しています</div>
+      <div class="article-summary">OpenAIはGPT-5.3インスタントのリリースの翌日にGPT-5.4 AIモデルの発売を teas しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+  </div>
+  <div class="category-header">📜 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-06-3990d070.html">
+      <div class="article-en">ByteDance’s AI Ambitions Are Being Hampered by Compute Restraints and Copyright Concerns | WIRED</div>
+      <div class="article-ja">ByteDanceのAI野心は計算制約と著作権懸念で阻まれている | WIRED</div>
+      <div class="article-summary">ByteDanceのAI野心は計算制約と著作権懸念により阻まれており、TikTokの米国事業譲渡後、Appleは米国人からByteDanceアプリのダウンロードや更新をブロックしています。</div>
+      <div class="source-tag">WIRED</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 60件収集 | 10件掲載</div>
+</body>
+</html>
