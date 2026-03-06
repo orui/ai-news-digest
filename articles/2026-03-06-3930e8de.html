@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>ChatGPT — リリースノート</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-06.html" class="back-btn">← 2026年03月06日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🤖 モデル・研究</span>
+    </div>
+    <h1 class="article-title-en">ChatGPT — Release Notes</h1>
+    <h2 class="article-title-ja">ChatGPT — リリースノート</h2>
+    <div class="article-full-text">ChatGPT — 最新の更新とリリースノート
+
+GPT-5.4は、最近の論理力、コーディング、代理ワークフローの進歩の最も優れたものを一つの先端モデルに集約しました。これは、GPT-5.3-Codexの業界-leadingなコーディング能力を取り入れつつ、ツール、ソフトウェア環境、スプレッドシート、プレゼンテーション、およびドキュメントを含むプロフェッショナルタスクにおけるモデルの動作方法を改善しました。その結果、複雑な実際の業務を正確に、効果的に、効率的に遂行できるモデルが生まれました—あなたが求めたものをより少ないやり取りで提供します。
+
+チャットGPTでは、GPT-5.4 Thinkingは現在、思考の計画を事前に提供し、作業中に途中でコースを調整できるようになりました。これにより、最終出力はより必要に沿ったものになります。また、GPT-5.4 Thinkingは、特に高度に特定されたクエリでは深いウェブ研究を改善し、長い思考が必要な質問ではコンテキストをより適切に維持します。これらの改善により、より高い品質の回答がより速く且つタスクに関連して届けられます。
+
+Codexアプリは、Codexを含むチャットGPTプランでWindows版が利用可能になりました。このアプリは、複数のCodexエージェントを並列で実行するためのWindowsデスクトップ表面を提供し、隔離されたワークツリーとレビュー可能な差分を備えています。これらの差分は編集、削除、またはプルリクエストに変換することができます。アプリからチャットGPTでサインインでき、アプリ、CLI、IDE間で作業を進めることができます。ツールを切り替えることなく作業を進めることができます。詳しくは：Codexを使用するチャットGPTプラン。
+
+GPT-5.3 Instantはウェブ検索時のより正確な回答、豊かで文脈をよりよく保持した結果、不要な行き当り前の中断、宣言的な表現の過度な使用を減らし、会話の流れを途切れるものから防ぎます。この更新は、人々が毎日感じているチャットGPT体験の部分に焦点を当てています：トーン、関連性、会話の流れ。これらは、ベンチマークでは常に明らかではないが、C</div>
+    <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
