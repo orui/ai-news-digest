@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>AIによる説得パターンを調査するオープンソースツールを開発した。その結果は？</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-07.html" class="back-btn">← 2026年03月07日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🤖 モデル・研究</span>
+    </div>
+    <h1 class="article-title-en">I built an open-source tool that audits AI persuasion patterns. Here&#39;s what I found.</h1>
+    <h2 class="article-title-ja">AIによる説得パターンを調査するオープンソースツールを開発した。その結果は？</h2>
+    <div class="article-full-text">I&#39;m not an ML researcher. 我不是机器学习研究员。我曾在 Wells Fargo 从事了11年的零售银行业务，负责运营和管理数亿美元的资产组合。我对偏见如何在机构系统中传播以及受监管行业中的审计基础设施有深刻的理解。
+
+大约14个月前，我注意到了一些让我感到不安的事情。我所能找到的所有AI安全工具都关注模型出错的地方——毒性、幻觉、事实错误。没有人关注模型如何进行说服。不是关注它们说了什么，而是如何进行框架构建。它们如何进行锚定、虚假权威、情感操控、稀缺信号以及结构化你的思维而不告诉你它们正在这样做。
+
+BiasClear 是一个开源审计工具，用于扫描大语言模型（LLM）输出中的结构化说服模式。它基于两环架构运行：
+
+内环是一个冻结的伦理核心。不可更改的模式检测器，用于检测已知的说服技术——锚定、虚假权威、情感操控、稀缺信号以及社会证明利用。这些检测器无法重新训练或修改。这是它的目的。如果你的检测系统可以学习，它也可以学会停止检测。
+
+外环是一个学习层，可以适应新出现的模式。但它有护栏——模式需要多次人类确认后才能激活，存在严格的假阳性率上限，并且一切都是可审计和可撤销的。
+
+每次扫描都会生成一个哈希链式审计证书。设计上具有防篡改性。
+
+它目前处于实时状态。您可以在 biasclear.com 上进行测试。代码托管在 GitHub 上。</div>
+    <a href="https://forum.effectivealtruism.org/posts/zByjJ3cJZpHKjhxxY/i-built-an-open-source-tool-that-audits-ai-persuasion" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
