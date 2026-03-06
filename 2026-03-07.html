@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月07日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月07日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/07</a>
+    <a href="2026-03-06.html" class="nav-day">03/06</a>
+    <a href="2026-03-05.html" class="nav-day">03/05</a>
+    <a href="2026-03-04.html" class="nav-day">03/04</a>
+    <a href="2026-03-03.html" class="nav-day">03/03</a>
+    <a href="2026-03-02.html" class="nav-day">03/02</a>
+  </div>
+  <div class="digest-box">本日はAI・機械学習・生成AI・ロボティクス・AI規制に関する記事が多く取り上げられました。LLMsの安全性や実用性、AIによるデータ保護、そしてAIの規制に関する議論が盛りだくさんです。</div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-07-6ce3446a.html">
+      <div class="article-en">AI LLM breaking news today</div>
+      <div class="article-ja">AI・LLMの最新ニュース</div>
+      <div class="article-summary">NPRは最新のAI・LLMニュースを提供しています。政治、ビジネス、科学、テクノロジーに関する最新の情報を含んでいます。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-a8dcac82.html">
+      <div class="article-en">LeadHer in Security with Rashmi Agrawal, CTO &amp; Co-Founder, CipherSonic Labs Inc.</div>
+      <div class="article-ja">CipherSonic LabsのCTO・共同創業者Rashmi Agrawalによるセキュリティに関する指導</div>
+      <div class="article-summary">CipherSonic LabsのCTO兼共同創業者Rashmi Agrawalは、女性の指導者としての視点と、企業向けの完全同形暗号化技術について語ります。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-81ca4303.html">
+      <div class="article-en">For SMBs, the killer app for LLMs is speed</div>
+      <div class="article-ja">SMBにとってのLLMのキラー・アプリは速度</div>
+      <div class="article-summary">SMB（中小企業）にとって、LLMの最大の利点は速度であることが示されています。この記事では、LLMを活用した具体的な例が紹介されています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-1e7327b7.html">
+      <div class="article-en">I built an open-source tool that audits AI persuasion patterns. Here&#39;s what I found.</div>
+      <div class="article-ja">AIによる説得パターンを調査するオープンソースツールを開発した。その結果は？</div>
+      <div class="article-summary">著者はAIによる説得パターンを調査するためのオープンソースツールを開発し、その結果を報告しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-be3d6575.html">
+      <div class="article-en">Developer use of generative AI may be declining</div>
+      <div class="article-ja">開発者が生成AIを使用している可能性が減少している</div>
+      <div class="article-summary">ゲーム開発者による生成AIの使用が減少している可能性があるという新しいデータが示されています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-823e87f8.html">
+      <div class="article-en">Z-Angle Memory: The Next-Generation Stacked DRAM for AI and HPC</div>
+      <div class="article-ja">Z-Angle Memory: AIとHPC向けの次世代スタックドDRAM</div>
+      <div class="article-summary">SAIMEMORYは、AIとHPC向けの次世代メモリを開発するためにSoftBankの子会社として設立されました。Intelとのパートナーシップも発表されました。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-b1d8ce1f.html">
+      <div class="article-en">Techbuzz</div>
+      <div class="article-ja">Techbuzz</div>
+      <div class="article-summary">Techbuzzは、Google I/O 2026でGeminiを活用したゲーム開発を展示する予定です。MicrosoftのGitHub CopilotやOpenAIのChatGPTと比較しながら、Geminiの特徴を紹介します。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-bda335f2.html">
+      <div class="article-en">Think AI hallucinations are bad? Here&#39;s why you&#39;re wrong</div>
+      <div class="article-ja">AIの幻覚が悪いとは思わない？なぜ間違っているのか</div>
+      <div class="article-summary">TechRadarは、AIの幻覚について誤解している人々に対して、その理由を説明しています。AIの発展には幻覚の存在が重要であると主張しています。</div>
+      <div class="source-tag">TechRadar</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-b0e70daa.html">
+      <div class="article-en">Elon Musk issues two-word response to claims Anthropic&#39;s Claude has gained consciousness</div>
+      <div class="article-ja">エ隆 Musk が Anthropic の Claude が意識を獲得したとの主張に対し、二単語の反応を発表</div>
+      <div class="article-summary">エ隆 Musk が Anthropic の Dario Amodei に Anthropic の LLM が意識を獲得したとの主張に対して、二単語の反応を発表しました。</div>
+      <div class="source-tag">Unilad Tech</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-9a9027f1.html">
+      <div class="article-en">AI Concepts to Learn in 2026: LLMs, Agents, RAG, MCP &amp; More - Geeky Gadgets</div>
+      <div class="article-ja">2026年に学ぶべきAIの概念：LLMs、エージェント、RAG、MCP &amp; それら - Geeky Gadgets</div>
+      <div class="article-summary">2026年に注目すべき10つのAI概念について解説。LLMトークン、コンテキストウィンドウ、エージェント、RAG、MCPなどについて詳しく説明しています。</div>
+      <div class="source-tag">Geeky Gadgets</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-70be15e1.html">
+      <div class="article-en">Anthropic launches AI exposure index to assess which white-collar jobs face automation risk</div>
+      <div class="article-ja">Anthropic がAI露出指数を発表し、どの白-collar職が自動化リスクに直面しているかを評価</div>
+      <div class="article-summary">Anthropic が新しい AI 露出指数を発表し、どの白-collar職が自動化リスクに直面しているかを評価。プログラマーが最もリスクが高いと指摘。</div>
+      <div class="source-tag">Crypto Briefing</div>
+    </a>
+  </div>
+  <div class="category-header">📜 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-07-c3103ec0.html">
+      <div class="article-en">Chardet dispute shows how AI will kill software licensing • The Register</div>
+      <div class="article-ja">Chardet の紛争は、AI がソフトウェアライセンスを破壊する方法を示す</div>
+      <div class="article-summary">オープンソースコミュニティで警報が鳴り響き、商業ライセンスも危機に瀕していると指摘。AIがソフトウェアライセンス制度を破壊する可能性が高まっている。</div>
+      <div class="source-tag">The Register</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-07-76685a2c.html">
+      <div class="article-en">Second Circuit Holds Generative AI Documents Not Protected by Privilege</div>
+      <div class="article-ja">ニューヨーク地裁が生成AI作成の文書が弁護士秘匿権を受けることができないと判決</div>
+      <div class="article-summary">ニューヨーク地裁が生成AI作成の文書が弁護士秘匿権を受けることができないと判決。生成AIを使用した文書が法的保護を受けない可能性が高まっている。</div>
+      <div class="source-tag">National Law Review</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 54件収集 | 13件掲載</div>
+</body>
+</html>
