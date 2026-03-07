@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>LLMは自分より賢い前提で扱うべきだ――その理由</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-07.html" class="back-btn">← 2026年03月07日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🛠️ ツール・サービス</span>
+    </div>
+    <h1 class="article-title-en">Start treating your LLMs as smarter than you - because they are</h1>
+    <h2 class="article-title-ja">LLMは自分より賢い前提で扱うべきだ――その理由</h2>
+    <div class="article-full-text">私は、クラウドベースのコーディング支援ツールやローカルの大規模言語モデル（LLM）を、登場した当初からかなり頻繁に使ってきました。最初は部分的には単なる好奇心からでしたが、モデルが改良され、ツールのエコシステムが成長するにつれて、私は至るところに妥当で強力なユースケース（use case）を見出しています。マーケティングチームが描こうとするような、世界を揺るがす革命だとまでは今でも感じていませんが、最近では実際の仕事をこなせるようになっています。
+
+あるいは、あなたが少し手綱を緩め、作業できる余地を与えるなら、こなせます。とはいえ、雰囲気コーディング（vibe coding）だけで次のTikTokキラーをワンショットで作れると言っているわけではありません。しかし、LLMが内部でどう動くかについて少し知識を持ち、より構造化されたプロンプト（prompting）を使えば、かなり印象的な結果を得ることができます。
+
+ローカルでもクラウドベースでも、LLMにプロンプト（prompting）する際は、すべてがトークン（token）で動いています。最初のプロンプトはトークンに変換され、応答は確率計算によって少しずつ生成されて、さらにトークンに変換され、という具合に続きます。ここでの問題は、各モデルにはコンテキストウィンドウ（context window）があり、一度に扱えるトークン数に上限があることです。そして、すべてがトークンを使うため、すぐに埋まってしまいます。
+
+さて、研究では、プロンプトや応答でよりぶっきらぼうにすること、あるいは簡潔さ（brevity）を用いることが、結果の精度を改善することが示されています。LLMを人間のように擬人化（anthropomorphize）したくなるのはもっともですが、そうしないでください。少なくとも私たちが考える文脈では、礼儀作法を理解していません。しかし、そうした短いプロンプトは、使うトークンが少なくなることで役立ちますし、簡潔さはモデルが学習した高品質な技術文献と整合しています。
+
+その代わりに</div>
+    <a href="https://xda-developers.com/start-treating-your-llms-as-smarter-than-you-because-they-are" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
