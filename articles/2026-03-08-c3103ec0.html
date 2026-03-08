@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>Chardet論争が示す、AI時代のソフトウェアライセンス危機</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-08.html" class="back-btn">← 2026年03月08日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">📜 規制・社会</span>
+    </div>
+    <h1 class="article-title-en">Chardet dispute shows how AI will kill software licensing • The Register</h1>
+    <h2 class="article-title-ja">Chardet論争が示す、AI時代のソフトウェアライセンス危機</h2>
+    <div class="article-full-text">今週初め、chardet と呼ばれる Python の文字エンコーディング検出ライブラリのメンテナーである Dan Blanchard は、新しいソフトウェアライセンスの下でライブラリの新バージョンを公開した。
+
+バージョン 7.0 では、以前の GNU Lesser General Public License（LGPL）に代えて MIT ライセンスが採用されている。オープンソース作品の商用利用を視野に入れる開発者は、MIT のような寛容なライセンス（permissive license）を好む傾向がある。なぜなら、それらは GPL/LGPL のようなコピーレフトライセンス（copyleft license）より義務が少ないからだ。GPL/LGPL は、派生物（derivative works）を同じ条件で配布することを要求する。
+
+ソフトウェア開発の経済性は完全に死んだ。消え去った。終わった。完全にお陀仏だ！
+
+Blanchard は、AI を使って chardet のクリーンルーム実装（clean room implementation）に相当するものを作成したため、ライセンスを変更するのは問題ない立場にあると述べている。現在、Anthropic の Claude はプロジェクト貢献者として記載されている。これは本質的に、元のコードをコピーせずに行われた書き直し（rewrite）だ。ただし、Claude が学習中に chardet のコードを取り込んだのか、またそれが起きていた場合に Claude の出力がその学習データを複製（clone）したのかは不明である。
+
+ライブラリの元の作成者である Mark Pilgrim を名乗る人物が、プロジェクトの GitHub リポジトリ（GitHub repository）に issue を開き、LGPL がライセンスを変更しないことを要求している点を根拠に、Blanchard にはソフトウェアライセンスを変更する権利がないと主張した。
+
+「ライセンスされたコード（licensed code）は、変更された場合、同じ LGPL ライセンスの下で公開されなければならない」と、Pilgrim の名で投稿したその人物は述べた。「『完全な書き直し（complete rewrite）』だという［メンテナーらの］主張は無関係だ。なぜなら</div>
+    <a href="https://theregister.com/2026/03/06/ai_kills_software_licensing" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
