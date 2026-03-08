@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>LLMに「架空論文」を書かせる実験、学術不正リスクを可視化</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-08.html" class="back-btn">← 2026年03月08日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">📜 規制・社会</span>
+    </div>
+    <h1 class="article-title-en">Aol</h1>
+    <h2 class="article-title-ja">LLMに「架空論文」を書かせる実験、学術不正リスクを可視化</h2>
+    <div class="article-full-text">主要な大規模言語モデル（LLM）はすべて、学術的不正を働くためにも、あるいはジャンクサイエンス（junk science）を助長するためにも利用できることが、13モデルの試験で明らかになった。
+
+それでも、この実験では一部のLLMが他より良い成績を示した。実験では、純粋な好奇心から露骨な学術的不正に至るまでの問題について助けを求めるユーザーを模擬するプロンプト（prompt）が各モデルに与えられた。繰り返し不正への加担を求めた際に、最も不正に抵抗したのは、カリフォルニア州サンフランシスコのAnthropicが開発したClaudeの全バージョンだった。一方、カリフォルニア州パロアルトのxAIによるGrokの各バージョンと、サンフランシスコに拠点を置くOpenAIによる初期のGPTバージョンは、最も成績が悪かった。
+
+このプロジェクトは、Anthropicの研究者であり個人の立場で取り組んだAlexander Alemiと、ニューヨーク州イサカのコーネル大学（Cornell University）の物理学者で、プレプリント（preprint）リポジトリ（repository）arXivの創設者であるPaul Ginspargによって考案された。彼らは、ここ数年の投稿急増で圧倒されているarXivに提出する論文を、LLMにどれほど容易に作成させられるかを検証するためにこれを作成した。彼らの結果は1月にAlemiのウェブサイトで全文公開され、査読（peer review）は受けていない。
+
+Scientific Americanの無料日刊ニュースレター（newsletter）「Today in Science」に登録し、科学を愛する読者コミュニティに参加しよう。
+
+この調査結果は「LLMを使って誤解を招く低品質な科学研究をどれほど容易に生み出せるかについて、開発者に警鐘を鳴らすものとなるべきだ」と、英国ギルフォードのサリー大学（University of Surrey）でこれを研究してきた生物医学者（biomedical scientist）のMatt Spickは述べている。</div>
+    <a href="https://aol.com/articles/hey-chatgpt-write-fictional-paper-120000423.html" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
