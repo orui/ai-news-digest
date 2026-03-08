@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>AIでAndroid開発するなら、Google新ベンチマークでモデル選定が容易に</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-08.html" class="back-btn">← 2026年03月08日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🛠️ ツール・サービス</span>
+    </div>
+    <h1 class="article-title-en">If you code Android apps with AI, Google&#39;s new benchmark makes it easier to pick the right model - Digital Trends</h1>
+    <h2 class="article-title-ja">AIでAndroid開発するなら、Google新ベンチマークでモデル選定が容易に</h2>
+    <div class="article-full-text">AI（人工知能）を使ってコードを書くAndroidアプリ開発者にとって、適切なモデルを選ぶのは難しい場合があります。すべてのモデルが同じように作られているわけではなく、多くはAndroid開発ワークフロー向けに特化して訓練されていません。この課題に対応するため、Googleは、実世界のAndroidコーディング作業において異なるAIモデル（人工知能モデル）がどれほど性能を発揮するかを開発者が理解できるよう支援する新しいベンチマークを導入しました。
+
+Android Benchと名付けられたこの新しいベンチマークは、大規模言語モデル（LLM）が典型的なAndroid開発タスクをどれほどうまく処理できるかを評価するよう設計されています。Googleによると、このベンチマークはGitHub上の公開プロジェクトから得た実世界のタスクを用いてモデルを評価し、モデルに実際のプルリクエスト（pull request）を再現させ、Androidアプリを構築する際に開発者が直面するものに類似した問題を解かせます。その後、結果が本当に問題を解決しているかどうかを検証します。
+
+より平易に言えば、このベンチマークは、AIモデル（人工知能モデル）が生成したコードが、表面的に正しく見えるだけでなく、本当に問題を修正しているかどうかを確認します。これによりGoogleは、実際のAndroid開発上の問題解決に関して、異なるモデルがどれほど有用なのかを測定できます。
+
+Android Benchの最初のバージョンでは、Googleは「エージェント的な機能（agentic）やツール使用には焦点を当てず、純粋にモデル性能を測定する」ことを計画していました。結果は大きな差を示しており、モデルがベンチマークのタスクを正常に完了できた割合は16%から72%の間でした。同社は、これらの結果を公開することで、開発者がモデルを比較しやすくなり、実際のAndroidコーディングを本当に処理できるモデルを選びやすくなるはずだと述べています。</div>
+    <a href="https://digitaltrends.com/phones/if-you-code-android-apps-with-ai-googles-new-benchmark-makes-it-easier-to-pick-the-right-model" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
