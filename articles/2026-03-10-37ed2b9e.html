@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>LLMにおけるリアルタイムデータ問題</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-10.html" class="back-btn">← 2026年03月10日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🤖 モデル・研究</span>
+    </div>
+    <h1 class="article-title-en">The Real-Time Data Problem with LLMs - SD Times</h1>
+    <h2 class="article-title-ja">LLMにおけるリアルタイムデータ問題</h2>
+    <div class="article-full-text">多くの点で、生成AI（generative AI）はインターネット上の情報探索をはるかに容易にしました。Google検索結果を延々とスクロールする時間を費やす代わりに、人々はシンプルな自然言語プロンプト（natural language prompt）で、探している答えを素早く得ることができます。しかし、最近の情報を必要とする質問が出る場合もあり、大規模言語モデル（LLM）は過去データで学習されているため、提供できる情報には限界があります。
+
+SerpApiは、このリアルタイムデータのギャップを埋めることを目指す企業で、Google、Bing、Amazon、そして100を超える検索エンジンの検索エンジン結果ページ（SERP）をスクレイピング（scraping）できるシンプルなAPI（Application Programming Interface）を提供し、開発者がその新しいデータを大規模言語モデル（LLM）に接続できるようにしています。
+
+こうしたAIアプリケーション（AI applications）は、ユーザープロンプト（user prompts）を受け取り、それがリアルタイムデータへのアクセスを必要とするかどうかを判断できます。応答を作成するのに更新データが不要だと判断した場合は、大規模言語モデル（LLM）に自身の知識を使うよう指示し、新しい情報が必要な場合は、アプリケーションがSerpApiへ検索クエリ（search query）を送信して、最新ニュース、製品データ、またはモデルの知識カットオフ日（knowledge cutoff date）以降の事実など、新鮮なデータを取得できます。
+
+「要するに、SERPデータはリアルタイムで外部の文脈（external context）を提供し、開発者はそれを大規模言語モデル（LLM）と組み合わせることで、ウェブ上で起きていることの最新状況に追随するアプリケーションを構築できます」と、SerpApiのテクニカルコンテンツ開発者（technical content developer）であるノライナ・ノルディン（Noraina Nordin）は述べました。
+
+たとえば、ユーザーが「macbook neo starting price」について尋ねると、モデルはリアルタイムデータが必要だと判断し、検索リクエスト（search request）を生成します。</div>
+    <a href="https://sdtimes.com/ai/the-real-time-data-problem-with-llms" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
