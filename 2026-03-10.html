@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月10日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月10日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/10</a>
+    <a href="2026-03-09.html" class="nav-day">03/09</a>
+    <a href="2026-03-08.html" class="nav-day">03/08</a>
+    <a href="2026-03-07.html" class="nav-day">03/07</a>
+    <a href="2026-03-06.html" class="nav-day">03/06</a>
+    <a href="2026-03-05.html" class="nav-day">03/05</a>
+    <a href="2026-03-04.html" class="nav-day">03/04</a>
+    <a href="2026-03-03.html" class="nav-day">03/03</a>
+    <a href="2026-03-02.html" class="nav-day">03/02</a>
+  </div>
+  <div class="digest-box">本日の新着は、LLMの実運用段階での課題と企業導入の加速が同時進行している点が際立ちました。特に、リアルタイムデータ不足や製品投入遅延といった「精度・統合」の壁が改めて可視化される一方、3D生成や業務自動化、社内教育への投資は着実に拡大しています。加えて、多言語・地域特化モデルや新モデル公開など、基盤技術の裾野が広がり、AI活用がグローバルかつ産業別に深まっている流れが確認できます。総じて、2026年のAIは話題先行から実装競争へ移り、品質管理と事業成果の両立が主要テーマになっています。</div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-10-37ed2b9e.html">
+      <div class="article-en">The Real-Time Data Problem with LLMs - SD Times</div>
+      <div class="article-ja">LLMにおけるリアルタイムデータ問題</div>
+      <div class="article-summary">この記事は、LLMが過去データ学習に依存することで最新情報への追随が難しいという構造的課題を取り上げています。生成AIの利便性が高まる一方で、鮮度が重要な用途では情報遅延が意思決定の質を下げる可能性があると指摘します。実運用では外部データ連携や更新戦略が競争力の鍵になることを示唆しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-eea717ef.html">
+      <div class="article-en">MiniMax M2.1: Significantly Enhanced Multi-Language Programming, Built for Real-World Complex Tasks - MiniMax News | MiniMax</div>
+      <div class="article-ja">MiniMax M2.1公開：多言語プログラミング能力を大幅強化、実世界の複雑タスク向けに最適化</div>
+      <div class="article-summary">MiniMaxはM2.1を発表し、多言語コーディング性能と複雑業務対応力の向上を打ち出しました。企業・個人のAIネイティブな働き方を後押しする狙いで、実務適用を意識したモデル改良が中心です。モデル競争がベンチマークから業務成果重視へ移っていることがうかがえます。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-bc1ac5fa.html">
+      <div class="article-en">Sunbird AI launches cultural AI Model for 31 Ugandan languages - NTV Uganda</div>
+      <div class="article-ja">Sunbird AI、ウガンダ31言語対応の文化特化AIモデルを公開</div>
+      <div class="article-summary">Sunbird AIは、31のウガンダ言語に対応した地域密着型の多言語モデルを発表しました。グローバル大手中心だったLLM開発に対し、文化・言語文脈を重視したローカルAIの重要性を示す事例です。教育・行政・地域サービスでのアクセシビリティ向上が期待されます。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-1fa23bcb.html">
+      <div class="article-en">AI Developments That Changed Vibrational Spectroscopy in 2025 | Spectroscopy Online</div>
+      <div class="article-ja">2025年の振動分光法を変えたAIの進展</div>
+      <div class="article-summary">ラマン、赤外、近赤外、ハイパースペクトル領域で、AIが較正・特徴抽出・解釈を自動化した動向を整理しています。研究ワークフローの高速化と再現性向上に寄与し、分析化学の現場実装が前進している点が示されます。ドメイン特化AIの実効性を示す好例です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+  </div>
+  <div class="category-header">🏢 企業・ビジネス</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-10-260767f7.html">
+      <div class="article-en">Apple postpones smart home display launch due to LLM Siri delays - MacDailyNews</div>
+      <div class="article-ja">Apple、LLM版Siriの遅れでスマートホームディスプレイ発売を延期</div>
+      <div class="article-summary">AppleがLLM対応Siriの開発遅延を理由に、スマートホーム向け新製品の投入時期を再調整したと報じられています。これは、生成AI機能がハードウェアの製品計画そのものを左右する段階に入ったことを示します。AI品質とユーザー体験の整合が、リリース判断の中心課題になっています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-d26cd22f.html">
+      <div class="article-en">How B2B marketers can prepare for AI agents that do the buying | MarTech</div>
+      <div class="article-ja">B2Bマーケターは「購買するAIエージェント時代」にどう備えるべきか</div>
+      <div class="article-summary">B2B購買プロセスでAIエージェントの関与が増える前提で、機械可読性の高いコンテンツ設計が重要になると論じています。人間向け訴求だけでなく、AIが評価しやすいデータ構造や情報整備が差別化要因になるという視点です。営業・マーケ連携の設計思想にも変化を迫る内容です。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-f01fd787.html">
+      <div class="article-en">Hyundai Card commences Large Language Model training for leadership team</div>
+      <div class="article-ja">Hyundai Card、経営層向けLLMトレーニングを開始</div>
+      <div class="article-summary">Hyundai Cardは、リーダーシップ層を対象にLLM活用トレーニングを開始し、組織的な生成AI定着を進めています。単発導入ではなく、意思決定層の理解と実装力を高めるアプローチが特徴です。金融業界でのAI活用が現場ツールから経営アジェンダへ拡大していることを示します。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-59d5494b.html">
+      <div class="article-en">Top 100 Gen AI Consumer Apps: March 2026 - by Olivia Moore</div>
+      <div class="article-ja">2026年3月版：生成AIコンシューマーアプリTop 100</div>
+      <div class="article-summary">生成AI消費者向けアプリの勢力図をランキング形式で示し、主要プロダクトの伸びや変化を可視化しています。単機能チャットから、AIがワークフロー全体を処理する体験への移行が進んでいる点が注目されています。市場の成熟に伴い、継続利用率や実用性が評価軸になっていることが読み取れます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-af290cac.html">
+      <div class="article-en">How AI could disrupt retail media&#39;s $38 billion search ad market</div>
+      <div class="article-ja">AIは小売メディアの380億ドル規模検索広告市場をどう揺るがすのか</div>
+      <div class="article-summary">ChatGPTなどのAIチャットボットが、消費者の検索行動を小売サイト外へ移す可能性があると指摘しています。これにより、リテールメディアの中核収益である検索広告の価値算定や配分が変化しうるという見立てです。小売事業者には、広告商品設計と顧客導線の再構築が求められます。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-aaedc81b.html">
+      <div class="article-en">Microsoft CEO says generative AI will displace coding jobs | Windows Central</div>
+      <div class="article-ja">Microsoft CEO、生成AIがコーディング職を代替しうると発言</div>
+      <div class="article-summary">マイクロソフトCEOの発言として、生成AIによる職務代替、とりわけコーディング業務への影響が取り上げられています。一方で、リスキリングによって個人・組織が適応可能だという実務的な示唆も示されています。AI導入と人材再配置を同時に進める経営判断が重要になります。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-6eea1349.html">
+      <div class="article-en">LLM visibility: What it is and how to track it in 2026</div>
+      <div class="article-ja">LLM可視性とは何か、そして2026年にどう追跡するか</div>
+      <div class="article-summary">AIアシスタントがブランドをどのように説明するかを可視化する「LLM visibility」の概念を解説しています。従来のSEOに加えて、生成AI経由の言及品質や露出管理が新たなマーケ指標になる点が重要です。企業は検索最適化と回答最適化を統合した戦略へ移行する必要があります。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+  </div>
+  <div class="category-header">🛠️ ツール・サービス</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-10-77f65845.html">
+      <div class="article-en">Tripo AI Debuts Production-Grade Native 3D Diffusion at GDC 2026</div>
+      <div class="article-ja">Tripo AI、GDC 2026で本番運用向けネイティブ3D拡散技術を発表</div>
+      <div class="article-summary">Tripo AIは、GDC 2026でプロダクション利用を前提とした3D生成AIの新展開を公表しました。開発者・クリエイター向けエコシステム強化も打ち出しており、AI生成3Dが実験段階から商用開発へ移行している流れを反映しています。ゲームやコンテンツ制作の制作工程短縮への影響が見込まれます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-1cdabcf4.html">
+      <div class="article-en">Microsoft and Anthropic Just Pushed Workplace AI Into Its Next Phase | Knowledge Hub Media</div>
+      <div class="article-ja">MicrosoftとAnthropicが職場AIを次段階へ押し上げる発表</div>
+      <div class="article-summary">本記事は、対話中心だったAI利用が長時間・実務フローの委任型へ進化している点を解説しています。Microsoft系の業務基盤とAnthropicのモデル活用が重なり、ワークプレイスAIの運用範囲が拡張しているという見立てです。企業にとってはガバナンスと成果測定の設計が一層重要になります。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-16f6e90d.html">
+      <div class="article-en">How to Monitor AI Agents in Production - DEV Community</div>
+      <div class="article-ja">本番環境のAIエージェントをどう監視するか</div>
+      <div class="article-summary">AIエージェント運用では単純な稼働監視だけで不十分で、失敗モードや品質指標の継続計測が必要だと論じています。エージェント特有の不確実性に対応するため、観測可能性の設計を初期段階から組み込むべきという内容です。実サービス化フェーズにおける運用標準の整備を後押しする記事です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-8919d1c6.html">
+      <div class="article-en">Your AI Agents Will Work Better If You Define Done Before They Start - DEV Community</div>
+      <div class="article-ja">AIエージェントは「完了条件」を先に定義すると性能が上がる</div>
+      <div class="article-summary">LLM/AIエージェント活用では、タスク開始前にDoneの定義を明確化することが成果向上につながると示しています。曖昧なゴール設定は出力のばらつきや再試行コストを増やすため、要件定義と評価軸の先行設計が鍵になります。プロンプト設計を運用設計へ拡張する視点が特徴です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-ee5a1725.html">
+      <div class="article-en">FHIR-Ready AI: Transforming Unstructured Clinical Data into Interoperable Resources - John Snow Labs</div>
+      <div class="article-ja">FHIR対応AIで非構造化臨床データを相互運用可能な資源へ変換</div>
+      <div class="article-summary">医療NLPにより臨床ノートからエンティティを抽出し、SNOMED CTやLOINCへマッピングしてFHIR連携を実現する取り組みを紹介しています。非構造データの標準化は、医療情報連携と二次利用の基盤整備に直結します。生成AIと業界標準の接続が進む実務事例です。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+  </div>
+  <div class="category-header">📜 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-10-67b6fb04.html">
+      <div class="article-en">Ask Hackaday: What Will An LLM Be Good For In The Plateau Of Productivity? | Hackaday</div>
+      <div class="article-ja">Hackadayに聞く：LLMは生産性プラトー期に何に有効か</div>
+      <div class="article-summary">長年の開発経験者の視点を通じて、LLM活用が誇張から実務的価値の見極め段階に入ったことを論じています。AIコーディング支援の期待と限界を対比し、どの業務で本当に生産性を押し上げるかを問い直す内容です。今後は万能感よりも適材適所の導入設計が重要になると示唆しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-712b0a03.html">
+      <div class="article-en">Generative AI From Trump Tkachuk Deepfake Video Legal Implications</div>
+      <div class="article-ja">トランプ／トカチュク深層偽造動画が示す生成AIの法的含意</div>
+      <div class="article-summary">スポーツ・エンタメ領域で広がるディープフェイク活用を題材に、権利侵害や責任範囲などの法的リスクを整理した分析です。生成AIの普及により、肖像・名誉・商業利用を巡る紛争の顕在化が避けられないという見通しが示されています。規制と契約実務の整備が急務であることを示唆します。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-c47468fe.html">
+      <div class="article-en">Big Tech Says Generative AI Will Save the Planet, Without Much Proof | SEJ</div>
+      <div class="article-ja">「生成AIは地球を救う」というBig Techの主張に十分な根拠はあるか</div>
+      <div class="article-summary">生成AIの気候貢献に関する主張のうち、学術的根拠を伴うものが限定的だとする報告を紹介しています。根拠不十分なアピールが一定数存在する点は、ESGコミュニケーションの信頼性に課題を投げかけます。AIの環境価値を語るには、検証可能な指標と透明性が不可欠です。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-10-a7e93c4f.html">
+      <div class="article-en">Suicide after LLM queries: Katie Miller says don’t ‘let loved ones use ChatGPT’, Elon Musk adds one word reply | World News - The Times of India</div>
+      <div class="article-ja">LLM利用後の自殺報道を受け、ChatGPT利用を巡る発言が波紋</div>
+      <div class="article-summary">痛ましい事件報道を契機に、著名人のSNS発言を通じてLLM利用の安全性が改めて論点化しています。個別事案の因果関係は慎重な検証が必要ですが、メンタルヘルス領域でのAI応答の取り扱いは社会的に極めて敏感です。利用ガイドラインとリスクコミュニケーションの強化が求められます。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 55件収集 | 20件掲載</div>
+</body>
+</html>
