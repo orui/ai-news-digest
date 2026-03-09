@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>Hackadayに聞く：LLMは生産性プラトー期に何に有効か</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-10.html" class="back-btn">← 2026年03月10日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">📜 規制・社会</span>
+    </div>
+    <h1 class="article-title-en">Ask Hackaday: What Will An LLM Be Good For In The Plateau Of Productivity? | Hackaday</h1>
+    <h2 class="article-title-ja">Hackadayに聞く：LLMは生産性プラトー期に何に有効か</h2>
+    <div class="article-full-text">私の友人の一人は、このおよそ50年の大半をソフトウェア開発者として過ごしてきており、1960年代のメインフレーム（mainframe）から今日のマシンに至るまで、あらゆるものに携わってきました。彼女は最近、これほどまでに騒がれている理由を確かめるためにAIコーディングツールを試しましたが、それは労力ゼロのバイブコーディング（vibe coding）ツールとしてではなく、自身の豊富なコーディング経験を補助するものとしてでした。彼女の反応は私の心に残りました。彼女は、19世紀末のアメリカの農村部で生まれた祖父に言及し、祖父が初めて自動車を見たときのことを語っていたのを思い出したのです。
+
+私たちはAIスロップ（AI slop）と不合理な誇大宣伝の波のただ中に生きているので、LLM（大規模言語モデル）をこき下ろすのは簡単に点を稼げる行為ですが、この一連の動き全体がガートナーのハイプサイクル（Gartner hype cycle）における「過度な期待のピーク（peak of inflated expectations）」へと上っていく中で、そろそろ先を見据える時期なのかもしれません。現在のAIハイプは必然的に崩壊して燃え尽きるでしょうが、その後に来るものは何でしょうか。生産性の安定期（plateau of productivity）という長い裾野には、LLM（大規模言語モデル）が成功するアプリケーションが含まれるはずですが、それは何になるのでしょうか。私たちはまだ動く水晶玉をハックして作れてはいませんが、それでも未来をのぞき込むには良い時期なのかもしれません。
+
+人口の大多数にとって、AI――彼らにとっては主にChatGPTを意味します――は、彼らの代わりに文章を書いてくれる魔法の道具であり、猫に人間のようなことをさせる絵を描かせていないときには、賢くないのに賢く見せてくれるものです。これは多くの人にとって検索エンジン（search engine）に取って代わり、さらに別の多くの人にとっては打ち明け相手（confidante）となり、「チャットボット精神病（Chatbot psychosis）」という語句が語彙（lexicon）に加わるほどになっています。
+
+何でも書けるツールを持つこと</div>
+    <a href="https://hackaday.com/2026/03/09/ask-hackaday-what-will-an-llm-be-good-for-in-the-plateau-of-productivity" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
