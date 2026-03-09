@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>本番環境のAIエージェントをどう監視するか</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-10.html" class="back-btn">← 2026年03月10日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🛠️ ツール・サービス</span>
+    </div>
+    <h1 class="article-title-en">How to Monitor AI Agents in Production - DEV Community</h1>
+    <h2 class="article-title-ja">本番環境のAIエージェントをどう監視するか</h2>
+    <div class="article-full-text">稼働監視（Uptime monitoring）だけでは不十分です。実際に追跡すべきもの、エージェント障害のほとんどがなぜサイレントに起きるのか、そして現在業界で使われているツールは何かを説明します。
+
+従来の監視は、単純な契約を中心に構築されています。システムは動いているか、動いていないかのどちらかです。サーバーは稼働中か停止中か。APIは200か500を返すか。アラートが発報され、誰かが修正します。
+
+AIエージェントはこの契約を壊します。エージェントは完全に利用可能でありながら――クラッシュなし、タイムアウトなし、エラーコードなし――誤った回答を生成したり、誤ったツールを呼び出したり、情報を捏造したりすることがあります。インフラの観点では、すべて健全に見えます。ユーザーの観点では、エージェントは壊れています。
+
+サイレント障害の問題。エージェントにおける本番（production）インシデントの最大級のものは、例外（exception）を投げません。実際には、次のように見えます。事実として誤っているのに自信満々の回答、部分的にしか成功していないツール呼び出し、タイムアウトに達するまでループするワークフロー。これらはいずれも標準的なアラートを発火させません。
+
+これが、AI業界が監視（monitoring）より広い概念である可観測性（observability）へ収束してきた理由です。目的は、エージェントが動いているかどうかを知ることだけではありません。エージェントが何をしているのかを一歩ずつ理解し、それを正しく実行しているかを把握することです。
+
+本番環境のAIエージェントは、いくつかの異なる種類のテレメトリー（telemetry）を生成します。必要なのはそのすべてです――各レイヤーが、他のレイヤーでは見逃す障害を明らかにします。
+
+トレース（trace）とは、1回のエージェント対話における完全な実行記録です。すべてのステップ、すべての意思決定、すべてのツール呼び出し、すべての中間出力を、タイムスタンプ付きで記録します。マルチステップのエージェントでは、単一のユーザーリクエストがt</div>
+    <a href="https://dev.to/hugo_o137/how-to-monitor-ai-agents-in-production-10ll" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
