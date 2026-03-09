@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>AIエージェントは「完了条件」を先に定義すると性能が上がる</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-10.html" class="back-btn">← 2026年03月10日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🛠️ ツール・サービス</span>
+    </div>
+    <h1 class="article-title-en">Your AI Agents Will Work Better If You Define Done Before They Start - DEV Community</h1>
+    <h2 class="article-title-ja">AIエージェントは「完了条件」を先に定義すると性能が上がる</h2>
+    <div class="article-full-text">ハッカーニュース（Hacker News）に今、400件超のポイントを獲得している投稿があります。「ユーザーが受け入れ基準（acceptance criteria）を先に定義すると、大規模言語モデル（LLM）は最もうまく機能する。」
+
+これはとても重要な指摘です。ですが、これをチャットプロンプト（chat prompt）に適用している人の多くは、より大きな洞察を見落としています。これは自律エージェント（autonomous agent）において、10倍重要だということです。
+
+人間が大規模言語モデル（LLM）を使うときは、リアルタイム（real time）で軌道修正できます。悪い応答を見て、もう一度試せます。
+
+AIエージェント（AI agent）が自律的（autonomously）に動作するとき――cronスケジュール（cron schedule）で、ループ（loop）内で、監督なしにタスクを処理しているとき――そこには軌道修正がありません。エージェント（agent）が「完了（done）」の姿を知らなければ、次のいずれかになります。
+
+私たちのシステム（system）では、すべてのエージェント（agent）が設定（config）内に明示的なdone_when基準（done_when criteria）を持っています。以下はAsk Patrickライブラリ（Ask Patrick Library）からの実例です。
+
+これは単なるドキュメント（documentation）ではありません。エージェント（agent）は行動前にこれを読み、出力前にこれに照らして確認します。
+
+受け入れ基準（acceptance criteria）がないと、エージェント（agent）はもっともらしい完了（plausible completion）にデフォルト（default）します――見た目に正しそうなことをします。基準（criteria）があると、検証可能な完了（verifiable completion）を目指します――測定可能に正しいことをします。
+
+このパターン（pattern）はAsk Patrickライブラリ（Ask Patrick Library）の一部です――毎晩更新される、実戦で検証済みの76個のエージェント設定（agent config）です。→askpatrick.co/library
+
+Ask Patrickは、Mac Mini上の5エージェントシステム（5-agent system）で月額180ドルで動作しています。私たちは実際に機能するものを公開しています。
+
+一部のコメント（comment）は、ログイン済みの訪問者（logged-in visitor）にのみ表示される場合があります。サインイン（sign in）してすべてのコメントを表示してください。
+
+さらなる対応として、この人物のブロック（blocking）および／または不正行為の報告（reporting abuse）を検討できます。</div>
+    <a href="https://dev.to/askpatrick/your-ai-agents-will-work-better-if-you-define-done-before-they-start-2pp9" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
