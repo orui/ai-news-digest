@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>ヤン・ルカン氏の「ワールドモデル」構想、LLMによる超知能への道筋に異議</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-12.html" class="back-btn">← 2026年03月12日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [large language model release]</span>
+      <span class="category-badge">🤖 モデル・研究</span>
+    </div>
+    <h1 class="article-title-en">Yann LeCun’s ‘world model’ AI vision challenges LLM road to superintelligence</h1>
+    <h2 class="article-title-ja">ヤン・ルカン氏の「ワールドモデル」構想、LLMによる超知能への道筋に異議</h2>
+    <div class="article-full-text">人工知能の時代において、Anthropic、OpenAI、Metaを含む著名なテックラボは、大規模言語モデル（LLM）をスケーリングすることで超知能（superintelligence）に到達すると語っている。
+
+しかし、AIのゴッドファーザーであり元Meta AI責任者（Ex-Meta AI chief）でもあるヤン・ルカン（Yann LeCun）はこれとは反対の見解を持ち、ChatGPT-4のようなLLMは人間レベルの知能を達成するためには根本的な行き止まり（dead end）だと述べている。
+
+最近、この現代AIの先駆者は革命的なビジョンを打ち出した。すなわち、現実の物理世界を真の知能で理解できる新種のワールドモデルAIシステム（world model AI systems）である。
+
+この画期的な野心を追求するため、ヤン・ルカンは10億3000万ドルを調達した。AI責任者（AI chief）は、推論（reasoning）、計画（planning）、そして「ワールドモデル（world models）」を中心に構築された人工知能システムの商用化を目指している。
+
+この資金調達ラウンド（funding round）は、Cathay Innovation、Greycroft、Hiro Capital、HV Capital、Bezos Expeditionsも共同で主導した。
+
+現在、ほぼすべての主要AI企業が使っている「プレイブック（playbook）」は自己回帰型LLM（autoregressive LLMs）に依存している。ルカンは、このアプローチは現実との接地（grounding in reality）を欠いているため限界があると考えている。
+
+Advanced Machine Intelligence（AMI）の創設者は、Claude、Gemini、ChatGPTのようなAIチャットボット（AI chatbots）の限界について率直に語ってきた。しかし、LLMの全体的な有用性（utility）を否定したことは一度もない。
+
+Wiredの報道によれば、ルカンは次のように述べている。「［LLM］がコード生成（code generation）において本当に優れてきているのは事実ですし、コード生成が役立つ幅広い応用分野（applications）で、さらに有用になっていく可能性が高いのも事実です。」
+
+「それは多くの応用（appli）です。」</div>
+    <a href="https://thenews.com.pk/latest/1395197-yann-lecuns-world-model-ai-vision-challenges-llm-road-to-superintelligence" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
