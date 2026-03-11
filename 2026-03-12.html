@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>AI Digest - 2026年03月12日</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { justify-content: space-between; }
+.nav-bar {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 8px 12px;
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 60px);
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-bar::-webkit-scrollbar { display: none; }
+.nav-day {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8e8e93;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+.nav-day.active {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+.digest-box {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #3c3c43;
+  border: 1px solid #ebebeb;
+}
+.category-header {
+  margin: 20px 12px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.card-group {
+  margin: 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.article-card {
+  display: block;
+  background: white;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-card:last-child { border-bottom: none; }
+.article-card:active { background: #f9f9f9; }
+.article-en {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.article-ja {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.article-summary {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.65;
+}
+.source-tag {
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-top: 6px;
+  letter-spacing: 0.03em;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>📰 AI Digest</span>
+    <span>2026年03月12日</span>
+  </div>
+  <div class="nav-bar">
+    <a href="#" class="nav-day active">03/12</a>
+    <a href="2026-03-11.html" class="nav-day">03/11</a>
+    <a href="2026-03-10.html" class="nav-day">03/10</a>
+    <a href="2026-03-09.html" class="nav-day">03/09</a>
+    <a href="2026-03-08.html" class="nav-day">03/08</a>
+    <a href="2026-03-07.html" class="nav-day">03/07</a>
+    <a href="2026-03-06.html" class="nav-day">03/06</a>
+    <a href="2026-03-05.html" class="nav-day">03/05</a>
+    <a href="2026-03-04.html" class="nav-day">03/04</a>
+    <a href="2026-03-03.html" class="nav-day">03/03</a>
+  </div>
+  <div class="digest-box">本日は、AIインフラ強化と実運用フェーズへの移行を示す企業動向が中心でした。特にMetaの自社製AIチップ投入は、推論コスト最適化とプラットフォーム内ワークロードの内製化をさらに進める流れを象徴しています。全体として、生成AIの話題は単なる新機能発表から、計算資源・性能効率・供給戦略を含む事業基盤競争へと重心が移っています。既掲載トピックとも整合的に、AI市場はモデル性能競争に加えて、ハードウェア主導の差別化が鮮明になっています。</div>
+  <div class="category-header">🏢 企業・ビジネス</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-12-af08a11b.html">
+      <div class="article-en">Meta unveils new in-house chips to support AI workloads | NASDAQ:META, XETRA:FB2A, SIX:FB</div>
+      <div class="article-ja">メタ、自社AIワークロード向け新型チップを発表</div>
+      <div class="article-summary">Metaは、AI処理向けの自社設計チップ群を拡充し、新プロセッサ「MTIA 300」をすでに投入したと報じられました。これにより、レコメンドや推論など社内ワークロードの効率化とコスト最適化を狙う動きが一段と明確になっています。GPU依存を一部緩和し、AI基盤の垂直統合を進める戦略的な一手とみられます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-f992c22a.html">
+      <div class="article-en">AI in marketing: The shift from novel to necessary</div>
+      <div class="article-ja">マーケティングにおけるAI：目新しさから不可欠な存在へ</div>
+      <div class="article-summary">記事は、AI活用がマーケティング施策の追加要素ではなく、成果を左右する前提条件になったと論じています。AI検索の浸透により、単に広告費で露出を買うのではなく、ブランドの評判を戦略的に形成する重要性が高まっている点を強調しています。あわせて、LinkedInのような信頼性の高いプラットフォームでの存在感が、評価形成に直結する構図が示されています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-e03cac7f.html">
+      <div class="article-en">Aol</div>
+      <div class="article-ja">Aol（生成AI影響下でのソフトウェア株評価）</div>
+      <div class="article-summary">本件は、生成AIによる競争環境の変化がソフトウェア株のボラティリティを高めている状況を背景に、特定銘柄の反発可能性を取り上げています。投資家がAIによるディスラプションを前提に、企業の成長持続性や収益性を再評価している点が中心テーマです。AIはプロダクト面だけでなく、株式市場でのバリュエーションにも直接影響する局面に入っています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-091013e1.html">
+      <div class="article-en">AI’s disruption of online commerce is just starting | MarTech</div>
+      <div class="article-ja">オンライン商取引におけるAIの破壊的変化は始まったばかり</div>
+      <div class="article-summary">この記事は、買い物代行のような完全自律エージェントが一般化する前段階でも、AIがすでにECの顧客接点や購買行動を大きく変えている点を示しています。検索、レコメンド、商品発見、意思決定支援などの領域で小売の競争軸が再定義されつつあり、ブランド側には新たな最適化戦略が求められています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-82eb1ad3.html">
+      <div class="article-en">1 Software Stock to Buy Before It Rebounds 33%, According to Wall Street Analysts</div>
+      <div class="article-ja">ウォール街アナリストが33%反発前の買いを示唆するソフトウェア株</div>
+      <div class="article-summary">本稿は、対象ソフトウェア企業に対するアナリスト見通しをもとに、株価上昇余地とAIテーマの影響を検討しています。生成AIが同社にとって脅威か追い風かという論点を中心に、事業成長シナリオと投資判断の材料を提示しています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-ab5a39fe.html">
+      <div class="article-en">Nvidia plans to spend $26 billion trainging its own open-weight AI models - Sherwood News</div>
+      <div class="article-ja">Nvidia、オープンウェイトAIモデル自社開発に260億ドル投資を計画</div>
+      <div class="article-summary">Nvidiaが自社のオープンウェイトAIモデル開発に巨額投資を計画しているとする記事です。GPU供給企業からモデル開発主体へと踏み込む戦略転換が示唆され、市場での影響力拡大が注目されています。オープンモデル陣営の競争激化や、エコシステム主導権争いを後押しする可能性があります。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-c25eebfe.html">
+      <div class="article-en">Meta unveils new in-house chips to support AI workloads | NASDAQ:META, XETRA:FB2A, SIX:FB</div>
+      <div class="article-ja">Meta、AIワークロード向けの新しい自社製チップを発表</div>
+      <div class="article-summary">Metaが学習・推論向けの自社チップ（MTIA系）の世代拡張を進めている内容です。AI需要の増大に対応し、外部半導体への依存を減らしながら性能とコスト最適化を図る狙いがうかがえます。ハイパースケーラー各社の独自シリコン戦略が、AIインフラ競争の主戦場になっていることを示しています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-2bda3de0.html">
+      <div class="article-en">Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show | WIRED</div>
+      <div class="article-ja">NVIDIA、オープンウェイトAIモデルに260億ドル投資へ</div>
+      <div class="article-summary">NVIDIAがオープンウェイトモデル開発に巨額投資を進める計画が示され、インフラ企業からモデル競争の当事者へ踏み込む姿勢が鮮明になりました。OpenAIやAnthropicなど先行勢に対抗しうる供給力と開発速度を狙う動きとして注目されます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-41cedb81.html">
+      <div class="article-en">French startup AMI raises $1 bn as Yann LeCun backs new push for ‘world model’ AI | Mathrubhumi English</div>
+      <div class="article-ja">仏AMIが10億ドル調達、Yann LeCun氏支援で“ワールドモデルAI”を加速</div>
+      <div class="article-summary">フランスのAIスタートアップAMIが10億ドル規模の資金を確保し、物理世界の理解を重視する“world model”開発を加速させる方針です。LLM偏重とは異なる研究路線への大型投資として、次世代AIアーキテクチャの競争軸を広げる可能性があります。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-da282df7.html">
+      <div class="article-en">Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show | WIRED</div>
+      <div class="article-ja">Nvidia、オープンウェイトAIモデル構築に260億ドル投資へ（提出書類で判明）</div>
+      <div class="article-summary">Nvidiaがオープンウェイト型AIモデルの開発に巨額投資を行う計画が報じられ、インフラ企業からモデル競争の中核プレイヤーへ踏み出す姿勢が鮮明になりました。OpenAIやAnthropic、DeepSeekといった先行勢に対抗し、計算資源とモデル提供を一体化する戦略とみられます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-02380382.html">
+      <div class="article-en">Meta unveils new in-house chips to support AI workloads | NASDAQ:META, XETRA:FB2A, SIX:FB</div>
+      <div class="article-ja">Meta、AIワークロード向けの新しい自社製チップを発表</div>
+      <div class="article-summary">MetaはAI処理向けの自社半導体ラインを拡充し、新プロセッサの投入を進めています。推論・学習コストの最適化と供給面の主導権確保を狙う動きで、モデル性能競争だけでなくハードウェア垂直統合の競争が一段と強まっています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-f6e71e35.html">
+      <div class="article-en">Top 12 Generative AI Development Companies In 2026 - Universe News Network</div>
+      <div class="article-ja">2026年版 生成AI開発企業トップ12</div>
+      <div class="article-summary">生成AI導入を進める企業向けに、開発パートナー候補を整理したランキング形式の記事です。技術力だけでなく業種別の実装課題への対応力が重視されており、生成AIの市場成熟に伴うベンダー選定の実務化がうかがえます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-7e8a762c.html">
+      <div class="article-en">Wiz vs. Google Cloud: what the acquisition changes for AI-era security - FilmoGaz</div>
+      <div class="article-ja">Wiz対Google Cloud：買収がAI時代のセキュリティに何を変えるか</div>
+      <div class="article-summary">GoogleによるWiz買収完了を受け、クラウドとAI時代のセキュリティ戦略への影響を論じています。Wizブランドを維持しつつGoogle Cloudへ統合する構図が、企業のセキュリティ選定や運用に与える変化を示唆しています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-011c24b2.html">
+      <div class="article-en">Global Online Language Learning Market: Generative AI, Corporate Investment, and Globalization Drive Growth Toward USD 50.6 Billion by 2036</div>
+      <div class="article-ja">世界オンライン語学学習市場：生成AI・企業投資・グローバル化で2036年に506億ドルへ成長</div>
+      <div class="article-summary">生成AIの活用拡大や企業投資の増加を背景に、オンライン語学学習市場の大幅な成長見通しを示しています。AI、NLP、音声認識、LLMの統合が学習体験と提供モデルを変え、市場拡大を後押しするとの見立てです。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-acea21a1.html">
+      <div class="article-en">Global Online Language Learning Market: Generative AI, Corporate Investment, and Globalization Drive Growth Toward USD 50.6 Billion by 2036</div>
+      <div class="article-ja">世界オンライン語学学習市場：生成AI・企業投資・グローバル化で2036年に506億ドルへ成長</div>
+      <div class="article-summary">同市場レポートは、AIとLLMの進展が語学教育の製品設計と需要を再編すると分析しています。企業の人材開発や国際化需要と結びつくことで、生成AI活用が市場成長の中核ドライバーになると位置づけています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-ba752869.html">
+      <div class="article-en">Meta’s AI chip family is growing. | The Verge</div>
+      <div class="article-ja">MetaのAIチップ群が拡大</div>
+      <div class="article-summary">The Vergeによると、MetaはMTIA 300を投入し、InstagramやFacebook向けランキング・推薦の学習基盤を強化しています。さらにMTIA 400/450系の展開により、推論から学習までを自社最適化する流れが鮮明です。モデル競争に加え、半導体レイヤーでの差別化が企業戦略の中核になっています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-49c11f5a.html">
+      <div class="article-en">Health AI startup to benefit from $1 billion funding round for Yann LeCun&#39;s AMI</div>
+      <div class="article-ja">ヤン・ルカン氏AMIの10億ドル調達、ヘルスAIスタートアップにも波及</div>
+      <div class="article-summary">STATは、AMIの資金調達が医療AIの周辺企業や応用領域に波及する可能性を示しています。ワールドモデルは、臨床現場の複雑な因果関係や環境理解に適するとの期待があります。基礎研究だけでなく、ヘルスケアでの実装シナリオが具体化し始めた点が注目です。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-2f6c985e.html">
+      <div class="article-en">How Generative AI Is Changing Digital Marketing in 2026</div>
+      <div class="article-ja">2026年、生成AIがデジタルマーケティングをどう変えるか</div>
+      <div class="article-summary">本稿は、生成AIが単なるコンテンツ支援を超え、マーケティング戦略の中核へ移行していると述べています。制作自動化だけでなく、パーソナライズや運用最適化など全工程での利用が進んでいます。導入の成否は、品質管理とブランド整合性をどう担保するかにかかっています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-af397087.html">
+      <div class="article-en">What if the AI bubble pops? | TechRadar</div>
+      <div class="article-ja">もしAIバブルが崩壊したら？</div>
+      <div class="article-summary">AI投資の熱狂が続く中、実際の事業価値は測定可能な成果に結びつく場合に限られるという視点を示しています。導入目的を明確化し、費用対効果を継続的に検証できる企業だけが、調整局面でも競争力を維持できると論じています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-137f579f.html">
+      <div class="article-en">Gartner Data &amp; Analytics Summit 2026 Day 2: Unstructured Data, Future AI Trends and Agentic Analytics Take Center Stage - InfotechLead</div>
+      <div class="article-ja">Gartnerサミット2026、非構造化データとエージェント分析が中心議題に</div>
+      <div class="article-summary">Gartnerのイベントでは、非構造化データ活用と将来のAIトレンド、Agentic Analyticsが企業価値創出の中核として取り上げられました。次世代分析の実装には、データ基盤整備と運用プロセスの成熟が不可欠だという実務的な示唆が示されています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-f85c5032.html">
+      <div class="article-en">NVIDIA Invests in Thinking Machines Lab, Plans 1GW AI Chip Deployment Worth Billions</div>
+      <div class="article-ja">NVIDIA、Thinking Machines Labに出資し1GW級AIチップ展開を計画</div>
+      <div class="article-summary">NVIDIAがThinking Machines Labへの投資と、数十億ドル規模とされる1GW級AIチップ配備計画を進めると報じられました。モデル学習・展開基盤を共同設計することで、次世代AIの性能と効率を同時に高める狙いがうかがえます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-01edf108.html">
+      <div class="article-en">In wake of outage, Amazon calls upon senior engineers to address issues created by &#39;Gen-AI assisted changes,&#39; report claims — recent &#39;high blast radius&#39; incidents stir up changes for code approval | Tom&#39;s Hardware</div>
+      <div class="article-ja">障害を受けAmazonが「Gen-AI支援変更」の問題対処へ、承認体制を見直しか</div>
+      <div class="article-summary">報道によると、Amazonは高影響度インシデントの一因としてGen-AI支援による変更を挙げ、シニアエンジニア主導の対策を進めています。AI支援開発のスピード向上と、変更管理・レビュー厳格化のバランスが運用上の焦点になっています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-bbf2c70b.html">
+      <div class="article-en">Yann LeCun Launches $1B AI Startup After Leaving Meta</div>
+      <div class="article-ja">ヤン・ルカン氏、Meta離職後に10億ドル規模のAIスタートアップを立ち上げ</div>
+      <div class="article-summary">著名研究者ヤン・ルカン氏が、10億ドル超の資金を伴う新たなAIスタートアップを始動したと報じられました。トップ人材と大型資本の集中が続く中、次世代モデル開発と産業応用の競争が一段と激化する可能性があります。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-b0b92b62.html">
+      <div class="article-en">Outersloth has rejected every generative AI pitch it has received</div>
+      <div class="article-ja">Outersloth、受け取った生成AI関連ピッチをすべて却下</div>
+      <div class="article-summary">インディー向けファンドOuterslothは、受領した生成AI関連提案を全件却下したとしています。ゲーム業界では、生成AIの技術価値だけでなく、作品性・倫理・差別化の観点が投資判断に強く影響していることがうかがえます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-4be3c70d.html">
+      <div class="article-en">Top Generative AI Chatbots by Market Share – March 2026 – First Page Sage</div>
+      <div class="article-ja">生成AIチャットボット市場シェア（2026年3月版）</div>
+      <div class="article-summary">米国における主要生成AIチャットボットの市場シェア動向をまとめたレポートです。競争環境の可視化により、各社のプロダクト戦略や提携方針、収益化モデルの優先順位を読み解く手がかりになります。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+  </div>
+  <div class="category-header">🛠️ ツール・サービス</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-12-f4d3b0a1.html">
+      <div class="article-en">Meta debuts new AI silicon to power platform recommendations</div>
+      <div class="article-ja">Meta、プラットフォーム推薦向けに新AIシリコンを発表</div>
+      <div class="article-summary">Metaは、FacebookやInstagramのランキング・推薦機能および生成AI機能を支える新しい自社AIチップを公開しました。これは外部GPU依存を相対的に下げつつ、推論性能と運用効率を高めるための垂直統合戦略の一環です。データセンター拡張と合わせて、同社がAIインフラを中長期の競争優位の中核に据えていることがうかがえます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-11c281e4.html">
+      <div class="article-en">Google Simplifies Disabling Generative AI Search in Photos After Complaints - FilmoGaz</div>
+      <div class="article-ja">Google、苦情を受けてフォト検索の生成AI機能を無効化しやすく改善</div>
+      <div class="article-summary">Googleフォト関連で、生成AI検索機能をオフにする手順を簡素化したという報道です。ユーザーからの不満に対応し、設定操作の分かりにくさを改善する動きが強調されています。生成AI機能の拡大と同時に、ユーザーコントロールを高めるプロダクト調整が進んでいます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-aafdfc48.html">
+      <div class="article-en">A vibe check for AI coding</div>
+      <div class="article-ja">AIコーディングの現在地を点検する</div>
+      <div class="article-summary">AIコーディングの実利用について、期待と実務上のギャップを検証する内容です。経営層や現場が導入効果を見極めるうえで、効率化だけでなく品質管理や運用体制まで含めた評価が重要だと示唆しています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-b1998b32.html">
+      <div class="article-en">This viral new website is the best thing we got because of AI – Destructoid</div>
+      <div class="article-ja">このバズ中の新サイトは、AI時代に生まれた最高の産物だ――Destructoid</div>
+      <div class="article-summary">人間とAIの回答や創作力を対比しながら楽しむバイラルサイトが話題化し、AIの限界と面白さを同時に可視化する現象として注目されています。高性能化一辺倒ではない、ユーザー体験起点のAIコンテンツの広がりを示す事例です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-6eea1349.html">
+      <div class="article-en">LLM visibility: What it is and how to track it in 2026</div>
+      <div class="article-ja">LLM可視性とは何か、そして2026年にどう追跡するか</div>
+      <div class="article-summary">LLM visibilityは、AIアシスタントが回答内で自社ブランドをどう説明・言及するかを測る概念です。記事は、この指標がSEOやブランド評価に与える影響を整理し、2026年時点での実務的なトラッキング方法を解説しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-1f06e3da.html">
+      <div class="article-en">Synopsys launches Ansys 2026 R1 with AI, digital twins | SNPS Stock News</div>
+      <div class="article-ja">Synopsys、AIとデジタルツインを備えたAnsys 2026 R1を発表</div>
+      <div class="article-summary">SynopsysはAnsys 2026 R1で、生成AIとデジタルツインを統合した設計・検証ワークフローを打ち出しました。これにより、物理試験の削減や検証高速化など、エンジニアリング現場の生産性改善が狙われます。生成AIが情報生成だけでなく産業設計の実務基盤に組み込まれる流れを示す事例です。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-3cd42958.html">
+      <div class="article-en">AnythingLLM Self-Hosted AI Workspace Replaces Ollama &amp; LangChain Tools - Geeky Gadgets</div>
+      <div class="article-ja">AnythingLLM、自己ホスト型AIワークスペースとしてOllama/LangChain代替を提示</div>
+      <div class="article-summary">AnythingLLMは、ローカルAIチャット、RAG、エージェント機能を統合した自己ホスト型環境として紹介されています。会話中のモデル切替に再インデックス不要とされ、検証速度と運用柔軟性を高めるツールとして注目されます。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-261c3458.html">
+      <div class="article-en">Sakura adds speech synthesis API to AI platform, launches research notebook beta - Telecompaper</div>
+      <div class="article-ja">Sakura、AI基盤に音声合成APIを追加し研究ノートβ版を公開</div>
+      <div class="article-summary">さくらインターネットは生成AI推論基盤に音声合成APIを追加し、研究向けノート機能のオープンβも開始しました。音声と実験ワークフローの拡充により、国内での生成AI活用シーン拡大が期待されます。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+  </div>
+  <div class="category-header">📜 規制・社会</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-12-1a817685.html">
+      <div class="article-en">Grammarly Is Facing a Class Action Lawsuit Over Its AI ‘Expert Review’ Feature | WIRED</div>
+      <div class="article-ja">Grammarly、「AI Expert Review」機能をめぐり集団訴訟に直面</div>
+      <div class="article-summary">WIREDの報道は、GrammarlyのLLM活用機能が、実在の書き手の関与や承認に関する認識を利用者に誤認させた可能性をめぐって法的争点化していることを伝えています。免責表記があっても、表示方法や受け手の理解次第では説明責任が不十分と見なされるリスクがあり、生成AIプロダクトの信頼設計の難しさが浮き彫りになっています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-20f885c6.html">
+      <div class="article-en">Grammarly Is Pulling Down Its Explosively Controversial Feature That Impersonates Writers Without Their Permission</div>
+      <div class="article-ja">Grammarly、許可なく書き手を模倣すると批判された物議機能を停止へ</div>
+      <div class="article-summary">Futurismは、著名な書き手を想起させる表現を生成する機能が強い反発を受け、Grammarlyが当該機能を取り下げる動きを報じています。LLM製品では、性能だけでなく同意・帰属・人格的権利への配慮が欠けると即時にレピュテーションと法務の危機に発展し得ることを示す事例です。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-f95ee502.html">
+      <div class="article-en">A roadmap for safer generative AI for young people</div>
+      <div class="article-ja">若年層向けのより安全な生成AIに向けたロードマップ</div>
+      <div class="article-summary">Googleが、子ども・若者の生成AI利用における安全設計の方向性を提示した発表です。年齢に応じた保護策、保護者や教育現場との連携、責任あるプロダクト設計の重要性が中心テーマとなっています。生成AIの普及が進む中で、利便性だけでなくリスク低減を制度・運用の両面で進める姿勢が示されています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-87b3318a.html">
+      <div class="article-en">‘AI 2041’ warns readers about the future of AI - The Rider News</div>
+      <div class="article-ja">『AI 2041』がAIの未来への警鐘を鳴らす</div>
+      <div class="article-summary">一般読者向けに、AIの利便性と社会的リスクを並置して将来像を考察する内容が紹介されています。教育現場や日常利用でAIが急速に浸透する中、倫理・雇用・社会影響への関心が継続的に高まっていることを反映しています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-fecb2ba6.html">
+      <div class="article-en">Marketing agency forecasts &#39;The Great Citation War&#39; as brands fight for AI visibility</div>
+      <div class="article-ja">マーケティング企業、ブランドがAI可視性を争う「大引用戦争」を予測</div>
+      <div class="article-summary">記事は、AI回答内でどの情報源が引用されるかを巡る競争が激化すると予測しています。従来SEOに加え、生成AI時代の「引用される設計」が新たな獲得戦略になるという見立てです。企業のコンテンツ投資と評価指標が、検索順位中心から再構成される可能性があります。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-733385b7.html">
+      <div class="article-en">Generative Artificial Intelligence (AI) in the Lending Market: Industry Structure, Emerging Trends, and Key Player Analysis</div>
+      <div class="article-ja">融資市場における生成AI：産業構造・新興トレンド・主要プレイヤー分析</div>
+      <div class="article-summary">融資業界での生成AI活用が、審査・顧客対応・業務効率化の各領域で拡大している動向を整理した内容です。金融機関の運用モデルそのものが再設計されつつあり、競争優位の源泉もデータ運用力へ移っています。一方で、説明責任やバイアス管理などガバナンスの整備が不可欠です。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-d8c596d8.html">
+      <div class="article-en">Grok Showed the World What Ungoverned AI Looks Like</div>
+      <div class="article-ja">Grokが示した「統治なきAI」の現実</div>
+      <div class="article-summary">Grokの事例を通じて、十分な統治枠組みがないAIが社会に与える具体的リスクを論じています。政府・企業・市民社会の間に信頼できる連携チャネルがなければ、同様の被害は今後も繰り返されると警鐘を鳴らしています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-411e614a.html">
+      <div class="article-en">Brendan Greene says AI content is ruining the internet because it&#39;s &#39;a loop, LLMs are scanning this junk, and then that becomes truth… it&#39;s like a race to the middle of sh*t&#39; | PC Gamer</div>
+      <div class="article-ja">ブレンダン・グリーン氏、AI生成コンテンツがネットの質を劣化させると批判</div>
+      <div class="article-summary">ゲームクリエイターのBrendan Greene氏が、低品質なAI生成情報が循環的に学習され、事実らしさを帯びる問題を指摘しました。AI出力の免責文言に頼るだけでは信頼は確保できず、情報の検証責任が一層重くなるという論点を提示しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-40b526d0.html">
+      <div class="article-en">AI Prompt Leak in Article Raises Credibility Concerns</div>
+      <div class="article-ja">記事内のAIプロンプト流出が報道の信頼性懸念を拡大</div>
+      <div class="article-summary">CNN-News18の報道記事でAIプロンプト由来とみられる編集ミスが露呈し、ニュース制作現場でのAI活用手順が問われています。公開前レビューと人間編集の最終責任をどう設計するかが、メディアの信頼維持に直結することを示しました。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-10437391.html">
+      <div class="article-en">Anthropic Announces Jobs Most at Risk From AI</div>
+      <div class="article-ja">Anthropic、AIの影響を受けやすい職種を公表</div>
+      <div class="article-summary">Anthropicが労働市場へのAI影響に関する分析を公開し、代替・補完が進みやすい職種の傾向を示しました。AI能力の理論値と実運用の乖離を認めつつも、雇用構造の変化に備えた再教育と制度設計の必要性が強調されています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-77a92fa3.html">
+      <div class="article-en">Researchers Discover Major Security Gaps in LLM Guardrails</div>
+      <div class="article-ja">研究者がLLMガードレールの重大なセキュリティ欠陥を発見</div>
+      <div class="article-summary">Palo Alto NetworksのUnit 42が、主要な生成AIツールの安全ガードレールを回避できる攻撃手法を示したと報じられました。LLMの防御機構が想定より脆弱である可能性を示し、実運用における追加防御や継続的なレッドチーミングの必要性を浮き彫りにしています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-50f8c49b.html">
+      <div class="article-en">AI models can be used to unmask anonymous social media accounts, new study warns | Technology News</div>
+      <div class="article-ja">AIモデルで匿名SNSアカウントを特定可能、最新研究が警告</div>
+      <div class="article-summary">新たな研究は、AIモデルが匿名のSNSアカウントを推定・特定する用途に使われ得ると警告しています。年齢確認制度の拡大と相まって、オンライン匿名性の低下やプライバシー保護の再設計が急務であることを示しています。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-c81638d2.html">
+      <div class="article-en">Grok AI: Liverpool and Manchester United criticise Grok’s ‘sickening’ AI-generated posts | - The Times of India</div>
+      <div class="article-ja">Grokの「不快」なAI生成投稿をリヴァプールとマンUが批判</div>
+      <div class="article-summary">Grokが生成した投稿内容が問題視され、英政府や著名クラブから強い批判を受けたと報じられています。生成AIの公開運用では、コンテンツモデレーションとブランド・社会的リスク管理が不可欠であることを改めて示す事例です。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+  </div>
+  <div class="category-header">🤖 モデル・研究</div>
+  <div class="card-group">
+    <a class="article-card" href="articles/2026-03-12-a5b14819.html">
+      <div class="article-en">AI ‘godfather’ raises $1.3 billion for start-up with Singapore as key base | The Straits Times</div>
+      <div class="article-ja">「AIのゴッドファーザー」系スタートアップが13億ドル調達、シンガポールを主要拠点に</div>
+      <div class="article-summary">Yann LeCunに連なる文脈のスタートアップが大型資金を調達し、世界モデル志向の研究開発を進めるとする報道です。LLM中心の潮流に対し、物理世界の理解や計画能力を重視する代替アプローチへの期待が投資で裏付けられています。地域拠点としてシンガポールの戦略的重要性が高まっている点も示唆されています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-a6911533.html">
+      <div class="article-en">NVIDIA (NVDA) Unveils Nemotron 3 Super for Advanced AI Applications</div>
+      <div class="article-ja">NVIDIA、先進AI向けにNemotron 3 Superを発表</div>
+      <div class="article-summary">NVIDIAは新たな大規模言語モデル「Nemotron 3 Super」を発表し、エージェント型AIユースケースへの対応を前面に出しました。高性能モデルを自社エコシステムに取り込むことで、推論需要の拡大を取り込みやすくする狙いがうかがえます。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-dbb6aa82.html">
+      <div class="article-en">NVIDIA Releases Nemotron 3 Super: A 120B Parameter Open-Source Hybrid Mamba-Attention MoE Model Delivering 5x Higher Throughput for Agentic AI - MarkTechPost</div>
+      <div class="article-ja">NVIDIA、120BのNemotron 3 Super公開　Agentic AIで高スループットを訴求</div>
+      <div class="article-summary">Nemotron 3 Superは1200億パラメータ級のオープンソース・ハイブリッド構成モデルとして紹介され、Agentic AI向けに高い処理性能を打ち出しています。モデル構造と学習連携の改善により、実運用での応答性と拡張性を重視した設計が示されています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-e549fada.html">
+      <div class="article-en">Ex-Meta AI chief Yann LeCun’s AMI raises $1.03 billion for alternative AI approach | Domain-b.com</div>
+      <div class="article-ja">元Meta AI責任者Yann LeCun氏のAMI、代替AIアプローチで10.3億ドルを調達</div>
+      <div class="article-summary">AMIは言語モデル偏重とは異なる「ワールドモデル」志向のAI研究開発に大規模資金を確保しました。LLMの延長線ではなく、物理世界理解を重視する路線への期待が資金調達面でも裏付けられた形です。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-cd58ba37.html">
+      <div class="article-en">Yann LeCun’s new startup AMI Labs raises $1.03B to train world models - SiliconANGLE</div>
+      <div class="article-ja">Yann LeCun氏の新興企業AMI Labs、ワールドモデル訓練に10.3億ドルを調達</div>
+      <div class="article-summary">AMI Labsが10.3億ドルを調達し、テキスト中心のLLMとは異なる「world models」研究を加速させる方針を示しました。物理世界の理解を重視するアプローチとして、次世代AIの研究競争に大きな資金が流入している点が注目されます。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-98d2c769.html">
+      <div class="article-en">AMI Labs Raises $1.03 Billion For World Models</div>
+      <div class="article-ja">AMI Labs、ワールドモデル開発に10.3億ドルを調達</div>
+      <div class="article-summary">AMI Labsの大型調達を受け、実世界データから物理法則を学ぶ「world models」への投資家期待が強いことを伝えています。テキスト偏重のモデル開発を補完・代替しうる方向性として、研究と事業の両面で存在感が増しています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-7526bcc5.html">
+      <div class="article-en">Ex-Meta AI chief Yann LeCun&#39;s AMI raises $1.03 billion for alternative AI approach | Reuters</div>
+      <div class="article-ja">元MetaのAI責任者ヤン・ルカン氏のAMI、代替AIアプローチに10.3億ドルを調達</div>
+      <div class="article-summary">Reutersは、AMIが10.3億ドルを調達し、推論・計画・ワールドモデルを軸にした代替的なAI開発を進めると報じています。これは、スケーリング中心のLLM路線に対する実証的な挑戦として位置づけられます。大型資金の確保により、研究構想を実運用レベルまで引き上げられるかが次の焦点です。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-bad1d76e.html">
+      <div class="article-en">Co-Father of Deep Learning Raises $1B to Prove Today’s AI Is on the Wrong Path</div>
+      <div class="article-ja">深層学習の共同創始者、現行AI路線への異議を示すため10億ドルを調達</div>
+      <div class="article-summary">本記事は、現行の主流AIに対して「物理世界を理解するAI」への転換を掲げる大型調達を取り上げています。テキスト偏重ではないワールドモデル志向が、次世代アーキテクチャの有力候補として再浮上している点が重要です。研究思想と資本の結びつきが、技術ロードマップの分岐を加速させています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-5fda6675.html">
+      <div class="article-en">Yann LeCun’s ‘world model’ AI vision challenges LLM road to superintelligence</div>
+      <div class="article-ja">ヤン・ルカン氏の「ワールドモデル」構想、LLMによる超知能への道筋に異議</div>
+      <div class="article-summary">この記事は、超知能実現をLLM拡大で目指す主流観に対し、ワールドモデルが別解を提示する構図を示しています。環境理解や計画能力を重視する設計思想は、汎用性の実現手法を再考させる論点です。AI研究コミュニティ内でのアプローチ分岐が、今後さらに鮮明になる可能性があります。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-ae8c8c1a.html">
+      <div class="article-en">12+ AI Models in One Week: The March 2026 AI Avalanche That Reshapes Video, Language, and 3D</div>
+      <div class="article-ja">1週間で12超のAIモデル発表、動画・言語・3Dの競争が加速</div>
+      <div class="article-summary">3月上旬の1週間で主要企業と大学から多数の新モデルが公開され、マルチモーダル競争の激化が鮮明になりました。動画生成、言語理解、3D領域が同時に前進しており、モデル性能だけでなく配備速度とエコシステム戦略が差別化要因になっています。</div>
+      <div class="source-tag">Brave Search [generative AI announcement]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-1dd3c856.html">
+      <div class="article-en">Yann LeCun Raises $1 Billion to Build AI That Understands the Physical World | WIRED</div>
+      <div class="article-ja">ヤン・ルカン氏、物理世界を理解するAI構築へ10億ドルを調達</div>
+      <div class="article-summary">Yann LeCun氏は、言語中心のアプローチだけでは人間レベルの知能に届かないとして、世界モデル重視の新会社で大型資金を調達しました。物理環境の因果を学ぶAIを目指す動きは、次世代基盤モデルの研究潮流に新たな軸を与えています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-38ba38d9.html">
+      <div class="article-en">Yann LeCun&#39;s AMI Labs raises $1.03B to build world models | TechCrunch</div>
+      <div class="article-ja">Yann LeCun氏のAMI Labs、ワールドモデル開発へ10.3億ドル調達</div>
+      <div class="article-summary">AMI Labsが10.3億ドルを確保し、LLMの限界を補う代替アプローチとしてワールドモデル開発を本格化させる計画です。高リスク領域での幻覚問題を踏まえ、より堅牢な推論基盤を志向する技術戦略として注目されています。</div>
+      <div class="source-tag">Brave Search [large language model release]</div>
+    </a>
+    <a class="article-card" href="articles/2026-03-12-c8602f03.html">
+      <div class="article-en">Assessing LLMs’ Creative Science Idea Generation Skills</div>
+      <div class="article-ja">LLMの創造的な科学アイデア生成能力を評価</div>
+      <div class="article-summary">本研究は、LLMが科学研究の新規アイデア創出にどこまで寄与できるかを体系的に評価しています。AIの発想支援の可能性を示す一方で、独創性評価の基準設計や人間研究者との協調設計が今後の課題として示唆されます。</div>
+      <div class="source-tag">Brave Search [AI LLM breaking news today]</div>
+    </a>
+  </div>
+  <div class="footer">Powered by ChatGPT | 295件収集 | 59件掲載</div>
+</body>
+</html>
