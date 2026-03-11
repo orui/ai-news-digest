@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>1週間で12超のAIモデル発表、動画・言語・3Dの競争が加速</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-12.html" class="back-btn">← 2026年03月12日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [generative AI announcement]</span>
+      <span class="category-badge">🤖 モデル・研究</span>
+    </div>
+    <h1 class="article-title-en">12+ AI Models in One Week: The March 2026 AI Avalanche That Reshapes Video, Language, and 3D</h1>
+    <h2 class="article-title-ja">1週間で12超のAIモデル発表、動画・言語・3Dの競争が加速</h2>
+    <div class="article-full-text">2026年3月の第1週は、近年の記憶の中でも最も集中的なAIリリースの一つを解き放った。わずか7日間（3月1日〜8日）にわたり、OpenAI、Alibaba、Lightricks、Tencent、Meta、ByteDance、そして複数の主要大学を含む組織が、少なくとも12の主要なAIモデルおよびツールを発表した。リリースは、大規模言語モデル（LLM）、動画生成エンジン（video generation engines）、画像エディター（image editors）、3Dエンコーダー（3D encoders）、GPU最適化エージェント（GPU optimization agents）、および拡散高速化手法（diffusion acceleration methods）にまたがった。完全な総括はAI Search（@aisearchio）によって記録され、同アカウントの週次ラウンドアップ動画（weekly roundup video）は、すべての発表を一挙に捉えた。
+
+OpenAIは3月5日にGPT-5.4を公開し、これを「プロフェッショナル業務向けの、私たちの最も高性能かつ高効率なフロンティアモデル（frontier model）」と説明した。このモデルには3つのバリアント（variants）がある：GPT-5.4（標準）、GPT-5.4 Thinking（推論優先）、GPT-5.4 Pro（最大能力）。APIは最大105万トークン（tokens）のコンテキストウィンドウ（context windows）をサポートしており、これはOpenAIがこれまで提供した中で最大である。事実精度（factual accuracy）については、GPT-5.4はGPT-5.2と比較して、個別主張（individual claim）の誤りを33%、回答全体（full-response）の誤りを18%削減した。また、知識労働（knowledge work）向けのOpenAIのGDPvalベンチマーク（benchmark）で過去最高の83%を記録した。
+
+Tool Search（ツール検索）と呼ばれる新機能は、モデルがツール呼び出し（tool calling）を管理する方法を再構築し、すべてをプロンプト（prompt）に読み込む代わりにツール定義（tool definitions）を動的に参照できるようにすることで、多数のツールを持つシステムのコストとレイテンシ（latency）を削減する。価格は標準コンテキスト（standard context）で入力100万トークンあたり2.50ドル、出力100万トークンあたり15.00ドルに設定されており、超過分には2倍の追加料金（2× surcharge）が適用される。</div>
+    <a href="https://sci-tech-today.com/news/march-2026-ai-models-avalanche" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
