@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>AnythingLLM、自己ホスト型AIワークスペースとしてOllama/LangChain代替を提示</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-12.html" class="back-btn">← 2026年03月12日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [AI LLM breaking news today]</span>
+      <span class="category-badge">🛠️ ツール・サービス</span>
+    </div>
+    <h1 class="article-title-en">AnythingLLM Self-Hosted AI Workspace Replaces Ollama &amp; LangChain Tools - Geeky Gadgets</h1>
+    <h2 class="article-title-ja">AnythingLLM、自己ホスト型AIワークスペースとしてOllama/LangChain代替を提示</h2>
+    <div class="article-full-text">AnythingLLMは、以下でBetter Stackが実演しているように、Ollama、LangChain、およびカスタムUIの機能を統合した単一のセルフホスト型プラットフォームを提供し、統一された環境を実現します。大規模言語モデル（LLM）を扱う開発者向けに設計されており、ドキュメント処理、コードベースとの対話、検索拡張生成（RAG）といったタスクをサポートします。ドラッグ＆ドロップインターフェース、ビジュアルワークフロービルダー、複数のモデルプロバイダーとの互換性などの機能により、複雑なワークフローを簡素化しながら、プライバシーと柔軟性を重視しています。ただし、高いリソース要件やワークフローの調整が時折必要になる点は、特定のユースケースにおいて課題となる可能性があります。
+
+この概要では、「AnythingLLM」がどのように効率的な検索拡張生成（RAG）統合を可能にし、複数プロジェクトを管理するための分離されたワークスペースをサポートし、会話の途中での動的なモデル切り替えを可能にするのかを確認します。また、プライベートAIシステムの構築からクライアント向けソリューションの開発までの実用的な適用例に加え、ハードウェア制約などの限界についても理解を深められます。読み終える頃には、このプラットフォームが現代のAI開発ワークフローにどのように適合するかを明確に把握できるでしょう。
+
+「AnythingLLM」は、AI開発ワークフローを効率化する豊富な機能群を提供しており、開発者にとって実用的な選択肢となります。
+
+「AnythingLLM」は、AIワークフローにおいて開発者が直面するいくつかの課題に対処し、多くの利点を提供します。
+
+私たちの詳細な記事と役立つ続きを活用して、ローカルAIの専門家になりましょう。</div>
+    <a href="https://www.geeky-gadgets.com/anything-llm-agent-builder/" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
