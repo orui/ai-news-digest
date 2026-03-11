@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Digest">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <title>Wiz対Google Cloud：買収がAI時代のセキュリティに何を変えるか</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
+  color: #111111;
+  padding: 0 env(safe-area-inset-right) 80px env(safe-area-inset-left);
+}
+.header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  color: #f5f5f5;
+  padding: calc(env(safe-area-inset-top) + 25px) 16px 14px calc(16px + env(safe-area-inset-left));
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.header { gap: 12px; }
+.back-btn {
+  color: rgba(245,245,245,0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.article-container {
+  margin: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 18px;
+  border: 1px solid #ebebeb;
+}
+.article-meta {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.category-badge {
+  background: #f0f0f0;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #666666;
+}
+.article-title-en {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-title-ja {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-full-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #222222;
+  white-space: pre-line;
+}
+.original-link {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="../2026-03-12.html" class="back-btn">← 2026年03月12日</a>
+  </div>
+  <div class="article-container">
+    <div class="article-meta">
+      <span>Brave Search [generative AI announcement]</span>
+      <span class="category-badge">🏢 企業・ビジネス</span>
+    </div>
+    <h1 class="article-title-en">Wiz vs. Google Cloud: what the acquisition changes for AI-era security - FilmoGaz</h1>
+    <h2 class="article-title-ja">Wiz対Google Cloud：買収がAI時代のセキュリティに何を変えるか</h2>
+    <div class="article-full-text">Google が Wiz の買収完了を発表し、Wiz はブランドを維持したまま、Wiz チームは Google Cloud に正式に加わりました。重要な比較点は、クラウドセキュリティが重要かどうかではなく、Wiz のセキュリティ体制（security posture）と Google Cloud のプラットフォーム体制（platform posture）がどのように組み合わさり、ソフトウェア開発速度と攻撃者の高度化の両面で AI 主導のシフトに対処するかです。
+
+Wiz はこの局面を「クラウドと AI セキュリティ（Cloud and AI Security）の新時代」と位置づけ、変わったのは「私たちを取り巻く世界」であり、セキュリティはいまや「AI の速度で」機能しなければならないと主張しています。Wiz が掲げる使命は、イノベーションのスピードを落とすのではなく前進させながら、あらゆる組織が構築・運用するすべてを保護できるよう支援することです。このアプローチにおいて、Wiz は「クラウド環境への深い理解（deep understanding of cloud environments）」と「コード・クラウド・ランタイム（runtime）全体にわたる豊富なコンテキスト（rich context）」を重視し、チームが AI 搭載アプリケーション（AI-powered applications）を最初から安全に構築し、システムの進化に合わせて継続的に強化できるようにすることを目指しています。
+
+また Wiz は、買収プロセス中の継続性にも言及し、この 1 年間チームは「一度も開発を止めなかった」と述べ、Wiz Research に関連する節目を強調しています。説明された研究事例には、数百万件の API キー（API keys）を漏えいさせた「Moltbook」の公開データベース（exposed database）、「AWS コンソール（AWS Console）を侵害し得た重大なサプライチェーン脆弱性（critical supply chain vulnerability）」とされる「CodeBreach」、そして CVSS 10.0 の評価を受け、クラウド環境の 75% 超に影響した Redis の 13 年来の重大な RCE 欠陥（Remote Code Execution flaw）である「RediShell」が含まれます。</div>
+    <a href="https://www.filmogaz.com/189264" target="_blank" rel="noopener" class="original-link">元記事を読む →</a>
+  </div>
+</body>
+</html>
